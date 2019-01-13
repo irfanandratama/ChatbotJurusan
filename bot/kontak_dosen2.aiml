@@ -1,0 +1,979 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- kontak_dosen.aiml -->
+	<topic name="">
+	<category>
+	    <pattern>* BERAPA * NOMOR * ABDUL HARIS</pattern>
+		<template>Pak Abdul Haris: 0819-3172-9530</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * HARIS</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ABDUL HARIS</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ABDUL * ROKHIM</pattern>
+		<template>Pak Abdul Rokhim: 0815-885-0743</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ABDURRASYID</pattern>
+		<template>Pak Abdurrasyid: 0817-9888-420</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * OCID</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ABDURRASYID</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ACHMAD * BACHTIAR * ZEN</pattern>
+		<template>Pak Achmad Bachtiar Zen: 0813-8007-6763</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ZEN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ACHMAD <star/> BACHTIAR <star/> ZEN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ADMIN</pattern>
+		
+		<template>Pak Admin: 0818-0873-5158</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * AHMAD * SJAIFULLAH</pattern>
+		
+		<template>Pak Ahmad Sjaifullah: 0812-8540-1508</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SYAIFULLAH</pattern>
+		<template><srai><star/> BERAPA <star/> NOMOR <star/> AHMAD <star/> SJAIFULLAH</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * AGUS * SALIM</pattern>
+		<template>Pak Agus Salim: 0811-1499-439</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ALIT * BONDAN</pattern>
+		
+		<template>Pak Alit Bondan: 0813-1725-2553</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ALIT</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ALIT <star/> BONDAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * BONDAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ALIT <star/> BONDAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ALOMA * SARUMAHA</pattern>
+		
+		<template>Ibu Aloma Sarumaha: 0812-6386-9455</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ASSISTIA * SEMIAWAN</pattern>
+		<template>Ibu Assistia Semiawan: 0811-1666-0307</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * BAMBANG * CAHYADI</pattern>
+		
+		<template>Pak Bambang Cahyadi: 0815-1432-0442</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DARMA * RUSJDI</pattern>
+		
+		<template>Pak Darma Rusjdi: 0812-968-8062</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DARMA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> DARMA <star/> RUSJDI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DEWI * ARIANTI</pattern>
+		
+		<template>Ibu Dewi Arianti: 0816-1934-980</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DEWI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> DEWI <star/> ARIANTI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DIAN * HARTANTI</pattern>
+		
+		<template>Ibu Dian Hartanti: 0815-898-8384</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DIAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> DIAN <star/> HARTANTI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DINE * TIARA * KUSUMA</pattern>
+		
+		<template>Ibu Dine Tiara Kusuma: 0821-1265-5596</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DINE</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> DINE <star/> TIARA <star/> KUSUMA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DWINA * KUSWARDANI</pattern>
+		
+		<template>Ibu Dwina Kuswardani: 0812-9053-436</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * DWINA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> DWINA <star/> KUSWARDANI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * EFI * YOSRITA</pattern>
+		
+		<template>Ibu Efi Yosrita: 0856-891-3538</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * EFI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> EFI <star/> YOSRITA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * EFY</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> EFI <star/> YOSRITA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ENDANG * SUNANDAR</pattern>
+		
+		<template>Pak Endang Sunandar: 0818-0952-6788</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ENDANG</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ENDANG <star/> SUNANDAR</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * FARIDHIAN * ANSHARI</pattern>
+		
+		<template>Pak Faridhian Anshari: 0856-2875-747</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * GANDHI * RIFAI</pattern>
+		
+		<template>Pak Gandhi Rifai: 0858-8289-0000</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * GREGORIUS * HENDITA</pattern>
+		
+		<template>Pak Gregorius Hendita: 0817-463-976</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * GREG</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> GREGORIUS <star/> HENDITA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * HERMAN * BEDI * AGTRIADI</pattern>
+		
+		<template>Pak Herman Bedi Agtriadi: 0812-2111-1696</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * BEDI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> HERMAN <star/> BEDI <star/> AGTRIADI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * I *JOKO * DEWANTO</pattern>
+		
+		<template>Pak I Joko Dewanto: 0815-9135-080</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * INDRIANTO</pattern>
+		
+		<template>Pak Indrianto: 0815-8064-686</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * INDRI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> INDRIANTO</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * IRFAN * SEMBIRING</pattern>
+		
+		<template>Pak Irfan Sembiring: 0818-95-4531</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * IRFAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> IRFAN <star/> SEMBIRING</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * IRIANSYAH * BM * SANGADJI</pattern>
+		
+		<template>Pak Iriansyah BM Sangadji: 0813-1661-3458</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * IRIANSYAH</pattern>
+		<template>
+		    <srai><star/>  <star/> IRIANSYAH <star/> BM <star/> SANGADJI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * IR</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> IRIANSYAH <star/> BM <star/> SANGADJI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * JB * RUMAHLEWANG</pattern>
+		
+		<template>Pak JB Rumahlewang: 0815-1174-1070</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * KARINA * DJUNAIDI</pattern>
+		
+		<template>Ibu Karina Djunaidi: 0852-8114-0589</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * KARINA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> KARINA <star/> DJUNAIDI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * KISMAN * H * MAHMUD</pattern>
+		
+		<template>Pak Kisman H Mahmud: 0812-955-3791</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * KISMAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> KISMAN <star/> H <star/> MAHMUD</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * LINDA * FUJIYANTI</pattern>
+		
+		<template>Ibu Linda Fujiyanti: 081-1188-8722</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * LINDA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> LINDA <star/> FUJIYANTI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * LUQMAN</pattern>
+		
+		<template>Pak Luqman: 0815-1429-7000</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * M * YOGA * DISTRA * SUDIRMAN</pattern>
+		
+		<template>Pak M. Yoga Distra Sudirman: 0856-7572-870</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YOGA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> M <star/> YOGA <star/> DISTRA <star/> SUDIRMAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MANEREP * PASARIBU</pattern>
+		
+		<template>Pak Manerep Pasaribu: 0811-383-661</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MANEREP</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MANEREP <star/> PASARIBU</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MANSYUR * SAFI I </pattern>
+		
+		<template>Pak Mansyur Safi'i: esia 92451464</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MANSYUR</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MANSYUR <star/> SAFI I</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MEILIA * NUR * INDAH</pattern>
+		
+		<template>Ibu Meilia Nur Indah: 0816-111-4298</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MEILI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MELI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MEILIA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MUHAMMAD * JAFAR * ELLY</pattern>
+		
+		<template>Pak Muhammad Jafar Elly: 0816-117-4874</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * JAFAR</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MUHAMMAD <star/> JAFAR <star/> ELLY</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * JAFAR * ELLY</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MUHAMMAD <star/> JAFAR <star/> ELLY</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MUHAMAD * JONNI</pattern>
+		
+		<template>Pak Muhamad Jonni: 0812-9059-5505</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * JONI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MUHAMAD <star/> JONNI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * JONNI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MUHAMAD <star/> JONNI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * MUHAMMAD * JONNI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> MUHAMAD <star/> JONNI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * PUJI * CATUR * S * PRAPTINI</pattern>
+		
+		<template>Ibu Puji Catur S. Praptini: 0838-7906-0234</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * PUJI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> PUJI <star/> CATUR <star/> S <star/> PRAPTINI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * PUJI * CATUR</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> PUJI <star/> CATUR <star/> S <star/> PRAPTINI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMA * FARAH * NINGRUM</pattern>
+		
+		<template>Ibu Rahma Farah Ningrum: 0812-8730-166</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAHMA <star/> FARAH <star/> NINGRUM</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAD * EVAN * PURNAWAN</pattern>
+		
+		<template>Pak Rahmad Evan Purnawan: 0813-6565-0011</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAD * EVAN</pattern>
+		<that>*  * RAHMAD * EVAN * ATAU *  * RAKHMAT * ARIANTO</that>
+		<template>Pak Rahmad Evan Purnawan: 0813-6565-0011</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * EVAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAD * EVAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAT * EVAN</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAT</pattern>
+		<template>
+		    Pak Rahmad Evan atau Pak Rakhmat Arianto?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAHMAD</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAHMAT</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAKHMAT * ARIANTO</pattern>
+		
+		<template>Pak Rakhmat Arianto: 0838-4998-8070</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAKHMAT</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RAKHMAT <star/> ARIANTO</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAKHMAT * ARIANTO</pattern>
+		<that>*  * RAHMAD * EVAN * ATAU *  * RAKHMAT * ARIANTO</that>
+		<template>Pak Rakhmat Arianto: 0838-4998-8070</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAKHMADI * IRFANSYAH * PUTRA</pattern>
+		
+		<template>Pak Rakhmadi Irfansyah Putra: 0812-135-7961</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RAKHMADI</pattern>
+		<template>
+		    Pak Rakhmadi Irfansyah Putra: 0812-135-7961
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RETNO * ASTA * DIANTARI</pattern>
+		
+		<template>Ibu Retno Asta Diantari: 0896-3541-9602</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * REZI * ARLANSYAH * SORI * PADA</pattern>
+		
+		<template>Pak Rezi Arlansyah Sori Pada: 0815-184-0096</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * REZI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> REZI <star/> ARLANSYAH <star/> SORI <star/> PADA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * REZI * ARLANSYAH</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> REZI <star/> ARLANSYAH <star/> SORI <star/> PADA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RIKI * RULI * AFFANDI * SIREGAR</pattern>
+		
+		<template>Pak Riki Ruli Affandi Siregar: 0813-1630-7758</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RIKI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RIKI <star/> RULI <star/> AFFANDI <star/> SIREGAR</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RIKI * RULI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RIKI <star/> RULI <star/> AFFANDI <star/> SIREGAR</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RIZQIA * CAHYANINGTYAS</pattern>
+		
+		<template>Ibu Rizqia Cahyaningtyas: 0815-160-6481</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * KIKI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RIZQIA <star/> CAHYANINGTYAS</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RIZQIA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> RIZQIA <star/> CAHYANINGTYAS</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ROSIDA * NUR * AZIZA</pattern>
+		
+		<template>Ibu Rosida Nur Aziza: 0822-1195-0016</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * ROSIDA</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> ROSIDA <star/> NUR <star/> AZIZA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * RUDOLF * EFRUAN</pattern>
+		
+		<template>Pak Rudolf Efruan: 0813-8876-3266</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SARIP * HIDAYATULOH</pattern>
+		
+		<template>Pak Sarip Hidayatuloh: 0813-8677-7421</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SARIP</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> SARIP <star/> HIDAYATULOH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SARWATI * RAHAYU</pattern>
+		
+		<template>Ibu Sarwati Rahayu: 0812-1020-7100</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SELY * KARMILA</pattern>
+		
+		<template>Ibu Sely Karmila: 0852-1972-8788</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SELY</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> SELY <star/> KARMILA</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SIGIT * SUKMAJATI</pattern>
+		
+		<template>Pak Sigit Sukmajati: 0813-8953-3409</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SIGIT</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> SIGIT <star/> SUKMAJATI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SUKRI * MURSANI</pattern>
+		
+		<template>Pak Sukri Mursani: 021-5495303</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SUKRI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> SUKRI <star/> MURSANI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * SYAIFUDDIN</pattern>
+		
+		<template>Pak Syaifuddin: 0812-951-3950</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * TONY * KOERNIAWAN</pattern>
+		
+		<template>Pak Tony Koerniawan: 0857-1701-7005</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * TONY</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> TONY <star/> KOERNIAWAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * TONI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> TONY <star/> KOERNIAWAN</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * UMI * MARFUAH</pattern>
+		
+		<template>Ibu Umi Marfuah: 0816-18520-358</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * UMI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> UMI <star/> MARFUAH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * WAHJOENI * S * MUHARDI</pattern>
+		
+		<template>Ibu Wahjoeni S. Muhardi: 0821-1459-4448</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * WAHYUNI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> WAHJOENI <star/> S <star/> MUHARDI</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * WISNU * HENDRO * MARTONO</pattern>
+		
+		<template>Pak Wisnu Hendro Martono: 0838-9102-5514</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * WISNU</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> WISNU <star/> HENDRO <star/> MARTONO</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YESSY * ASRI</pattern>
+		
+		<template>Ibu Yessy Asri: 0856-1127-772</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YESSY * ASRI</pattern>
+		<that> YESSY FITRIANI ATAU  YESSY ASRI</that>
+		<template>Ibu Yessy Asri: 0856-1127-772</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YESSY</pattern>
+		<template>
+		    Ibu Yessy Fitriani atau Ibu Yessy Asri?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YESSY * FITRIANI</pattern>
+		
+		<template>Ibu Yessy Fitriani: 0813-9858-5454</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YESSY * FITRIANI</pattern>
+		<that> YESSY FITRIANI ATAU  YESSY ASRI</that>
+		<template>Ibu Yessy Fitriani: 0813-9858-5454</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YASNI * DJAMAIN</pattern>
+		
+		<template>Ibu Yasni Djamain: 0812-813-4913</template>
+	</category>
+	
+	<category>
+	    <pattern>* BERAPA * NOMOR * YASNI</pattern>
+		<template>
+		    <srai><star/> BERAPA <star/> NOMOR <star/> YASNI <star/> DJAMAIN</srai>
+		</template>
+	</category>
+	
+	    <category>
+		    <pattern>* BERAPA * NOMOR * ANDI * DAHRONI</pattern>
+			<template>Pak Andi Dahroni: 085317164416</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * ANDI</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> ANDI <star/> DAHRONI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * SATRIO * YUDHO</pattern>
+			<template>Pak Satrio Yudho: 085218004447</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * YUDHO</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> SATRIO <star/> YUDHO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * FADLI</pattern>
+			<template>Pak Muhammad Fadli Prathama: 085769601661</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * MUHAMMAD * FADLI * PRATHAMA</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> FADLI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * YUDHY</pattern>
+			<template>Pak Yudhy Setiawan: 085860854757</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * YUDHY * SETIAWAN</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> YUDHY</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * PERSON HENDRA JATNIKA</pattern>
+			<template>Pak Hendra Jatnika: 081220123467</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * HENDRA * JATNIKA</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * JATNIKA</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * JAT</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * PRITA</pattern>
+			<template>Ibu Pritasari Palupiningsih: 085717735945</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * PRITASARI * PALUPININGSIH</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> PRITA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * PRITASARI</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> PRITA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * EKA * PUTRA</pattern>
+			<template>Pak Eka Putra: 085265792254</template>
+		</category>
+		
+		<category>
+		    <pattern>* BERAPA * NOMOR * EKA</pattern>
+			<template><srai><star/> BERAPA <star/> NOMOR <star/> EKA <star/> PUTRA</srai></template>
+		</category>
+
+	<category>
+	    <pattern>* TERIMA * KASIH</pattern>
+		<template>
+			<think><set name="topic"></set></think>
+			Sama-sama. Ada lagi yang bisa dibantu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* OKE</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>*</pattern>
+		<template>
+			Maaf mungkin namanya bisa lebih jelas lagi? Mohon tambahkan Pak atau Ibu di depan nama dosen.
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* OKE</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BAIK</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANK * YOU</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANKS</pattern>
+		<template>
+			<srai>TERIMA KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Apa itu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TIDAK * ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Mungkin Anda ingin menanyakan hal lain?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TIDAK * JADI</pattern>
+		<that>KONTAK DOSEN SIAPA</that>
+		<template>
+		    <srai><star/> TIDAK <star/> ADA</srai>
+		</template>
+	</category>
+    </topic>
+</aiml>

@@ -1,0 +1,174 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- kontak_dosen.aiml -->
+
+    <category>
+        <pattern>INTENT SKRIPSI</pattern>
+	    <template>
+	        <think><set name="topic">SKRIPSI</set></think>
+		    Apa yang ingin kamu ketahui tentang skripsi? (Syarat pengambilan, pembimbing, syarat sidang)
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>INTENT SKRIPSI *</pattern>
+	    <template>
+	        <srai><star/> SKRIPSI</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* INTENT SKRIPSI </pattern>
+	    <template>
+	        <srai><star/> SKRIPSI</srai>
+	    </template>
+    </category>
+
+    <category>
+        <pattern>* OTHER SKRIPSI</pattern>
+	    <template>
+	        <think><set name="topic">SKRIPSI</set></think>
+		    Apa yang ingin kamu ketahui tentang skripsi? (Syarat pengambilan, pembimbing, syarat sidang skripsi)
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>OTHER SKRIPSI</pattern>
+	    <template>
+	        <think><set name="topic">SKRIPSI</set></think>
+		    Apa yang ingin kamu ketahui tentang skripsi? (Syarat pengambilan, pembimbing, syarat sidang skripsi)
+	    </template>
+    </category>
+	
+	<topic name="SKRIPSI">
+	    <category>
+		    <pattern>* SYARAT * AMBIL * SKRIPSI</pattern>
+			<template>Untuk mengambil mata kuliah skripsi, harus minimal berada di semester 8 dan telah atau sambil mengambil mata kuliah magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>* SYARAT * AMBIL * SKRIPSI *</pattern>
+			<template>Untuk mengambil mata kuliah skripsi, harus minimal berada di semester 8 dan telah atau sambil mengambil mata kuliah magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>* SYARAT * PENGAMBILAN * </pattern>
+			<template>Untuk mengambil mata kuliah skripsi, harus minimal berada di semester 8 dan telah atau sambil mengambil mata kuliah magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>* SYARAT * PENGAMBILAN</pattern>
+			<template>Untuk mengambil mata kuliah skripsi, harus minimal berada di semester 8 dan telah atau sambil mengambil mata kuliah magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>INTENT PEMBIMBING SKRIPSI</pattern>
+			<template>
+			    Pembimbing utama skripsi bisa dipilih sendiri oleh mahasiswa dengan mendatangi dosen yang bersangkutan secara langsung. Untuk dosen pembimbing kedua ditentukan oleh jurusan.
+			</template>
+		</category>
+		
+		<category>
+		    <pattern>* INTENT PEMBIMBING SKRIPSI</pattern>
+			<template>
+			    <srai>INTENT PEMBIMBING SKRIPSI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT SYARAT SIDANG SKRIPSI</pattern>
+			<template>1) Penulisan skripsi telah disetujui oleh dosen pembimbing untuk diujikan pada ujian sidang skripsi.<![CDATA[<html><br/></html>]]>2) Telah lulus semua mata kuliah dengan minimal C yang sesuai dengan kurikulum yang berlaku.<![CDATA[<html><br/></html>]]>3)IPK minimal 2,0.<![CDATA[<html><br/></html>]]>4) Memiliki sertifikat TOEFL.<![CDATA[<html><br/></html>]]>Balas dengan "Lanjutkan" untuk syarat berikutnya.</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT SYARAT SIDANG SKRIPSI</pattern>
+			<template>1) Penulisan skripsi telah disetujui oleh dosen pembimbing untuk diujikan pada ujian sidang skripsi.<![CDATA[<html><br/></html>]]>2) Telah lulus semua mata kuliah dengan minimal C yang sesuai dengan kurikulum yang berlaku.<![CDATA[<html><br/></html>]]>3)IPK minimal 2,0.<![CDATA[<html><br/></html>]]>4) Memiliki sertifikat TOEFL.<![CDATA[<html><br/></html>]]>Balas dengan "Lanjutkan" untuk syarat berikutnya.</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LANJUTKAN</pattern>
+			<that>* SYARAT BERIKUTNYA</that>
+			<template>5) Memiliki 5 sertifikat soft skill.<![CDATA[<html><br/></html>]]>6) Memiliki 5 sertifikat seminar.<![CDATA[<html><br/></html>]]>7) Tidak mempunyai tunggakan keuangan dan membayar biaya ujian sidang sesuai ketentuan yang berlaku.<![CDATA[<html><br/></html>]]>8) Tidak mempunyai pinjaman buku perpustakaan.<![CDATA[<html><br/></html>]]>Ingin melihat syarat sebelumnya atau ingin lanjutkan untuk melihat lampiran form yang harus dipenuhi?(Balas "Lanjutkan" atau "Sebelumnya")</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LANJUTKAN</pattern>
+			<that>* SYARAT SEBELUMNYA ATAU INGIN LANJUTKAN *</that>
+			<template>Lampiran form yang harus dipenuhi antara lain: <![CDATA[<html><br/></html>]]>1) Lembar persetujuan sidang skripsi.<![CDATA[<html><br/></html>]]>2) Surat keterangan telah memenuhi persyaratan akademik, bebas keuangan, dan bebas peminjaman buku perpustakaan.<![CDATA[<html><br/></html>]]>3) Permohonan mengikuti ujian sidang skripsi. Ada pertanyaan lain?</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER SEBELUMNYA</pattern>
+			<that>* SYARAT SEBELUMNYA ATAU INGIN LANJUTKAN *</that>
+			<template><srai>INTENT SYARAT SIDANG SKRIPSI</srai></template>
+		</category>
+		
+		<category>
+			<pattern>INTENT SYARAT SIDANG</pattern>
+			<template><srai>INTENT SYARAT SIDANG SKRIPSI</srai></template>
+		</category>
+		
+		<category>
+			<pattern>* SYARATNYA * SIDANG</pattern>
+			<template><srai>INTENT SYARAT SIDANG SKRIPSI</srai></template>
+		</category>
+		
+		<category>
+			<pattern>* SIDANG * SYARATNYA</pattern>
+			<template><srai>INTENT SYARAT SIDANG SKRIPSI</srai></template>
+		</category>
+		
+		<category>
+	    <pattern>* TERIMA * KASIH</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			Sama-sama. Ada lagi yang bisa dibantu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* OKE</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BAIK</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANK * YOU</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANKS</pattern>
+		<template>
+			<srai>TERIMA KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Apa itu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TIDAK * ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Mungkin Anda ingin menanyakan hal lain?
+		</template>
+	</category>
+	</topic>
+</aiml>

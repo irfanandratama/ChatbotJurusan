@@ -1,0 +1,57 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- izin.aiml -->
+
+
+    <category>
+	    <pattern>* INTENT IZIN *</pattern>
+		<template><srai><star/> IZIN</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>* INTENT IZIN</pattern>
+		<template><srai><star/> IZIN</srai></template>
+	</category>
+	
+    <category>
+	    <pattern>* IZIN</pattern>
+		<template>Maksud kamu, kamu ingin bertanya soal prosedur izin kuliah? Izin karena apa kalau boleh tahu?<think><set name="topic">IZINKUL</set></think></template>
+	</category>
+	
+	<category>
+	    <pattern>* IZIN *</pattern>
+		<template><srai><star/> IZIN</srai></template>
+	</category>
+	
+	<topic name="IZINKUL">
+	    <category>
+		    <pattern>* SAKIT</pattern>
+			<template>Oh karena sakit. Kalau kamu tidak dapat hadir di perkuliahan karena sakit, kamu harus membuat surat (keterangan) sakit sebagai bukti untuk mengurus absensi kamu. Surat itu kemudian bisa diperlihatkan ke staf jurusan untuk mengubah status absensi kamu.<![CDATA[<html><br/></html>]]>Batas mengurusnya adalah seminggu dari tanggal sakit.</template>
+		</category>
+		
+		<category>
+		    <pattern>* SAKIT *</pattern>
+			<template><srai><star/> SAKIT</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* ACARA</pattern>
+			<template>Apakah acara kampus atau acara keluarga? Kalau acara kampus, coba tanyakan apakah ada surat dispensasinya. Biasanya akan diurus oleh panitia.</template>
+		</category>
+		
+		<category>
+		    <pattern>* ACARA * KELUARGA</pattern>
+			<template>Untuk yang ini tidak bisa izin ya. Mungkin bisa menghubungi dosen atau staf jurusan langsung terkait acara yang berhubungan dengan keluarga.</template>
+		</category>
+		
+		<category>
+		    <pattern>* ACARA * KAMPUS</pattern>
+			<template>Apakah acara kampus atau acara keluarga? Kalau acara kampus, coba tanyakan apakah ada surat dispensasinya. Biasanya akan diurus oleh panitia.</template>
+		</category>
+		
+		<category>
+		    <pattern>*</pattern>
+			<template>Maaf mungkin bisa lebih jelas lagi kamu ingin bertanya apa tentang izin kuliah?</template>
+		</category>
+	</topic>
+
+</aiml>

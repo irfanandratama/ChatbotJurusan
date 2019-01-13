@@ -1,0 +1,343 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- matakuliah.aiml -->
+
+    <category>
+		<pattern>INTENT MATA KULIAH</pattern>
+		<template>
+			<think><set name="topic">MATKUL</set></think>
+			Apa yang mau kamu tanyakan terkait mata kuliah?(Matkul Wajib, Matkul Pilihan, Lulus Mata Kuliah,)
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* INTENT MATA KULIAH</pattern>
+		<template>
+			<srai>INTENT MATA KULIAH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>INTENT MATAKULIAH</pattern>
+		<template>
+			<srai><star/> MATA <star/> KULIAH</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* INTENT MATA KULIAH *</pattern>
+		<template>
+			<think><set name="topic">MATKUL</set></think>
+			Apa yang mau kamu tanyakan terkait mata kuliah?(Matkul Wajib, Matkul Pilihan, Lulus Mata Kuliah,)
+		</template>
+	</category>
+
+	<category>
+		<pattern>* INTENT MATAKULIAH *</pattern>
+		<template>
+			<srai><star/> MATA <star/> KULIAH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* MATA * KULIAH</pattern>
+		<template>
+			<think><set name="topic">MATKUL</set></think>
+			Apa yang mau kamu tanyakan terkait mata kuliah?(Matkul Wajib, Matkul Pilihan, Lulus Mata Kuliah,)
+		</template>
+	</category>
+
+	<category>
+		<pattern>* MATAKULIAH</pattern>
+		<template>
+			<srai><star/> MATA <star/> KULIAH</srai>
+		</template>
+	</category>
+
+		<topic name="MATKUL">
+			<category>
+				<pattern>* KODE *</pattern>
+				<template>
+					Sepertinya terlalu banyak bila saya sebutkan. Untuk sekarang kamu bisa melihat melalui anjungan mahasiswa.
+				</template>
+			</category>
+			
+			<category>
+				<pattern> * WAJIB</pattern>
+				<template>
+					Mata kuliah wajib yang ingin kamu tanyakan? Semester berapa ya?
+				</template>
+			</category>
+			
+			<category>
+				<pattern> * WAJIB *</pattern>
+				<template>
+				    <srai><star/> WAJIB</srai>
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 1</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Pendidikan Agama, Pancasila, Bahasa Inggris Teknik, Algoritma dan Pemrograman 1 + Praktik, Teknologi Informasi, Aljabar Linier, Logika Matematika, Fisika Mekanika
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 2</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Pendidikan Kewarganegaraan, Bahasa Indonesia Penelitian, Algoritma dan Pemrograman 2 + Praktik, Statistik + Praktik, Interaksi Manusia dan Komputer, Organisasi dan Arsitektur Komputer, Kalkulus 1, Matematika Diskret
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 3</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Struktur Data, Pemrograman Visual, Sistem Operasi, Komunikasi Data, Perangkat Lunak Jaringan 1, Teknik Digital + Praktik, Kalkulus 2, Fisika Listrik dan Magnet, Sumber Daya Energi
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 4</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Bahasa Rakitan, Sistem Berkas, Pemrograman Objek, Perangkat Lunak Jaringan 2, Mikroprosesor + Praktik, Teori Bahasa dan Otomata, Pengolahan Citra, Etika Profesi, Rangkaian Listrik + Praktik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 5</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Sistem Informasi, Pemrograman SQL, Teknik Kompilasi, Kecerdasan Buatan, Teknik Animasi, Sistem Basis Data + Praktik, Jaringan Komputer + Praktik, Keamanan Sistem Komputer, Metode Numerik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 6</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Analisa Algoritma, Perancangan Basis Data, Simulasi dan Pemodelan, Sistem Pendukung Keputusan, Rekayasa Sistem Informasi, Komputer dan Masyarakat, Multimedia, Ekonomi Teknik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 7</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Riset Operasi, Metodologi Penelitian Ilmu Komputer, Manajemen Teknik, Pemrosesan Paralel, Sistem Syaraf Buatan, Rekayasa Perangkat Lunak + Praktik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 8</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Kerja Magang, Skripsi
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* PILIHAN</pattern>
+				<template>
+					Mata kuliah pilihan yang ingin kamu tanyakan? Semester berapa? 6 atau 7?
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* PILIHAN *</pattern>
+				<template>
+				    <srai><star/> PILIHAN</srai>
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 6</pattern>
+				<that>* SEMESTER BERAPA 6 ATAU 7</that>
+				<template>
+					Untuk SI atau Jaringan?
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* SI</pattern>
+				<that>UNTUK SI ATAU JARINGAN</that>
+				<template>
+					Sistem Informasi Geografis, Design Grafis, Technopreneurship, Cloud Computing
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* JARINGAN</pattern>
+				<that>UNTUK SI ATAU JARINGAN</that>
+				<template>
+					Pengantar Teknologi Scada, PLC, Mikrokontroler, Perancangan dan Manajemen Jaringan
+				</template>
+			</category>
+			
+			<category>
+				<pattern>NUMBER 7</pattern>
+				<that>* SEMESTER BERAPA 6 ATAU 7</that>
+				<template>
+					Untuk SI atau Jaringan?
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* SI</pattern>
+				<that>UNTUK SI ATAU JARINGAN</that>
+				<template>
+					Data Mining dan Warehousing, Rekayasa Pengembangan Web, Audit TI, Web Design, Mobile Programming, Optimasi Basis Data
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* JARINGAN</pattern>
+				<that>UNTUK SI ATAU JARINGAN</that>
+				<template>
+					Embedded System, Sistem Kinerja Jaringan, Forensik Komputer dan Jaringan Network Forensik, Robotik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* LULUS * MATA * KULIAH</pattern>
+				<template>Minimal untuk lulus dari suatu mata kuliah harus bernilai C. Untuk lulus dari perguruan tinggi, tidak boleh ada nilai D lebih dari 2 sks.</template>
+			</category>
+			
+			
+			
+			<category>
+			<pattern>OTHER TERIMA OTHER KASIH</pattern>
+			<template>
+				<think><set name="topic"></set></think>
+				Sama-sama. Ada lagi yang bisa dibantu?
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER OKE</pattern>
+			<template>
+				<srai>OTHER TERIMA OTHER KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER BAIK</pattern>
+			<template>
+				<srai>OTHER TERIMA OTHER KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER THANK OTHER YOU</pattern>
+			<template>
+				<srai>OTHER TERIMA OTHER KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER THANKS</pattern>
+			<template>
+				<srai>OTHER TERIMA OTHER KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER ADA</pattern>
+			<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+			<template>
+				Apa itu?
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER TIDAK OTHER ADA</pattern>
+			<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+			<template>
+				Mungkin Anda ingin menanyakan hal lain?
+			</template>
+		</category>
+		
+		    <category>
+				<pattern>* NUMBER 1</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Pendidikan Agama, Pancasila, Bahasa Inggris Teknik, Algoritma dan Pemrograman 1 + Praktik, Teknologi Informasi, Aljabar Linier, Logika Matematika, Fisika Mekanika
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 2</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Pendidikan Kewarganegaraan, Bahasa Indonesia Penelitian, Algoritma dan Pemrograman 2 + Praktik, Statistik + Praktik, Interaksi Manusia dan Komputer, Organisasi dan Arsitektur Komputer, Kalkulus 1, Matematika Diskret
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 3</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Struktur Data, Pemrograman Visual, Sistem Operasi, Komunikasi Data, Perangkat Lunak Jaringan 1, Teknik Digital + Praktik, Kalkulus 2, Fisika Listrik dan Magnet, Sumber Daya Energi
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 4</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Bahasa Rakitan, Sistem Berkas, Pemrograman Objek, Perangkat Lunak Jaringan 2, Mikroprosesor + Praktik, Teori Bahasa dan Otomata, Pengolahan Citra, Etika Profesi, Rangkaian Listrik + Praktik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 5</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Sistem Informasi, Pemrograman SQL, Teknik Kompilasi, Kecerdasan Buatan, Teknik Animasi, Sistem Basis Data + Praktik, Jaringan Komputer + Praktik, Keamanan Sistem Komputer, Metode Numerik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 6</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Analisa Algoritma, Perancangan Basis Data, Simulasi dan Pemodelan, Sistem Pendukung Keputusan, Rekayasa Sistem Informasi, Komputer dan Masyarakat, Multimedia, Ekonomi Teknik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 7</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Riset Operasi, Metodologi Penelitian Ilmu Komputer, Manajemen Teknik, Pemrosesan Paralel, Sistem Syaraf Buatan, Rekayasa Perangkat Lunak + Praktik
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 8</pattern>
+				<that>* SEMESTER BERAPA *</that>
+				<template>
+					Kerja Magang, Skripsi
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 6</pattern>
+				<that>* SEMESTER BERAPA 6 ATAU 7</that>
+				<template>
+					Untuk SI atau Jaringan?
+				</template>
+			</category>
+			
+			<category>
+				<pattern>* NUMBER 7</pattern>
+				<that>* SEMESTER BERAPA 6 ATAU 7</that>
+				<template>
+					Untuk SI atau Jaringan?
+				</template>
+			</category>
+		</topic>
+</aiml>

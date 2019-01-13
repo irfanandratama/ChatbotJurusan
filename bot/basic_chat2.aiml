@@ -1,0 +1,156 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- basic_chat2.aiml -->
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Mohon maaf. Yang kamu katakan belum aku mengerti. Mungkin bisa mencoba bertanya dengan memilih salah satu dari kategori berikut:<![CDATA[<html><br/></html>]]>
+			- Magang<![CDATA[<html><br/></html>]]>
+			- Skripsi<![CDATA[<html><br/></html>]]>
+			- Tentang Absensi <![CDATA[<html><br/></html>]]>
+			- Kontak Dosen <![CDATA[<html><br/></html>]]>
+			- Ruangan Dosen <![CDATA[<html><br/></html>]]>
+			Atau mungkin hal lainnya?
+        </template>
+    </category>
+	
+	<category>
+        <pattern>OTHER NAMA OTHER SAYA *</pattern>
+        <template>
+            Hai, senang kenalan sama kamu.<set name="nama"><star index='3'/></set>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OTHER HELLO</pattern>
+        <template>
+            <srai>OTHER HALO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>OTHER SAVE</pattern>
+        <template>
+            Tersimpan.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* WHAT * ARE * YOU</pattern>
+        <template>
+            Saya adalah sebuah bot.
+        </template>
+    </category>
+	
+	<category>
+        <pattern>OTHER HALO</pattern>
+        <template>
+		    <random>
+                <li>Halo juga :D</li>
+				<li>Hai</li>
+				<li>Halo</li>
+				<li>Hai. Ada yang bisa dibantu?</li>
+				<li>Hai. Butuh bantuan?</li>
+				<li>Iya</li>
+				<li>Hai, ada yang mau ditanyakan?</li>
+			</random>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>OTHER IYA</pattern>
+		<that>HAI BUTUH BANTUAN</that>
+		<template>Silahkan, tanya saja.</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER YA</pattern>
+		<that>HAI BUTUH BANTUAN</that>
+		<template>Silahkan, tanya saja.</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER HAI</pattern>
+		<template><srai>OTHER HALO</srai></template>
+	</category>
+	
+	<category>
+        <pattern>OTHER KAMU QUESTION SIAPA</pattern>
+        <template>
+		    <random>
+                <li>Saya chatbot</li>
+				<li>Saya sesuatu yang bisa membantu kamu.</li>
+				<li>Aku chatbot jurusan</li>
+				<li>Hai, aku chatbot. Nama kamu siapa?</li>
+				<li>Saya adalah chatbot jurusan yang akan menjawab pertanyaan seputar jurusan. Ada yang mau ditanyakan?</li>
+			</random>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>OTHER KAMU QUESTION APA</pattern>
+		<template><srai>OTHER KAMU QUESTION SIAPA</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER NAMA OTHER KAMU QUESTION SIAPA</pattern>
+		<template>Saya tidak punya nama pasti. Tapi kamu bisa panggil sebagai chatbot jurusan. Nama kamu siapa?</template>
+	</category>
+	
+	<category>
+	    <pattern>QUESTION SIAPA OTHER KAMU</pattern>
+		<template><srai>OTHER NAMA OTHER KAMU QUESTION SIAPA</srai></template>
+	</category>
+    
+	<category>
+	    <pattern>* APA * KAMU</pattern>
+		<template>Jangan galak.</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER MAAF</pattern>
+		<template>
+		    <random>
+			    <li>Kenapa kamu minta maaf?</li>
+				<li>Iya aku maafkan.</li>
+				<li>Tidak apa-apa.</li>
+				<li>Iya. Mohon maaf lahir batin.</li>
+		    </random>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER MAAF *</pattern>
+		<template>
+		    <srai>MAAF</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>*</pattern>
+		<that>KENAPA KAMU MINTA MAAF</that>
+		<template><random><li>Sudah tidak usah dipikirkan. Semua sudah dimaafkan.</li>
+		<li>Santai saja</li></random></template>
+	</category>
+	
+	<category>
+	    <pattern>*</pattern>
+		<that>* NAMA KAMU SIAPA?</that>
+		<template><think><set name="nama"><star/></set></think>Senang berkenalan dengan kamu.</template>
+	</category>
+	
+	<category>
+	    <pattern>QUESTION SIAPA OTHER AKU</pattern>
+		<template>Kamu adalah <get name="nama"/>.</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER SAMPAI OTHER JUMPA</pattern>
+		<template>Sampai bertemu lagi. Kamu bisa close tab ini.</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER KELUAR</pattern>
+		<template><srai><star/> SAMPAI <star/> JUMPA</srai></template>
+	</category>
+</aiml>

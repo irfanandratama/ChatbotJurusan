@@ -1,0 +1,97 @@
+{% include 'header.html' %}
+<body class="animsition">
+    <div class="page-wrapper">
+     {% include 'menu.html' %}
+
+     <!-- PAGE CONTAINER-->
+     <div class="page-container2">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop2">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2">
+                        <div class="logo d-block d-lg-none">
+                            <a href="#">
+                                <img src="images/icon/logo-white.png" alt="Chatbot Jurusan" />
+                            </a>
+                        </div>
+                        <div class="header-button2">
+                            <div class="header-button-item js-item-menu">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section__content section__content--p30" style="padding-top: 100px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="title-5 m-b-35">Data AIML</h3>
+
+                            <div class="table-responsive table-responsive-data2" >
+                                <table class="table table-data2">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>Location</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									{% for item in isi %}
+                                        <tr class="tr-shadow">
+                                            <td>{{item[0]}}</td>
+                                            <td>{{item[1]}}</td>
+                                            <td>{{item[2]}}</td>
+                                            <td>
+											    <a href="{{url_for('download', typefile='aimlfile', filename=item[2])}}">
+                                                    <button class="btn btn-primary btn-sm" onClick="afterdownload()" data-toggle="tooltip" data-placement="top" title="Unduh">
+                                                        <i class="zmdi zmdi-download"></i>
+                                                    </button>
+												</a>
+												<a href="{{url_for('deletefile', item_id=item[0])}}">
+                                                    <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Hapus">
+                                                        <i class="zmdi zmdi-delete"></i>
+                                                    </button>
+												</a>
+                                            </td>
+                                        </tr>
+									{% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>Copyright © 2018. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE CONTAINER-->
+    </div>
+</div>
+
+<script>
+    function afterdownload(){
+	setTimeout(function (){
+	    window.location.reload();
+		}, 3000);
+	}
+</script>
+
+{% include 'footer.html' %}

@@ -1,0 +1,82 @@
+Indeks/nn/O biaya/nnc/O tenaga/nnu/O kerja/nnu/O sektor/nnc/O swasta/jj/O secara/in/O keseluruhan/nn/O ,/,/O termasuk/vbt/O gaji/nn/O dan/cc/O manfaat/nnu/O benefit/nn/O ,/,/O naik/nn/O 4,7/nnp/NUM %/sym/O dalam/in/O 12/cdp/NUM bulan/nnc/O berakhir/vbi/O pada/in/O September/nn/O ,/,/O dibandingkan/vbi/O dengan/in/O 4,5/cdp/NUM %/sym/O untuk/in/O 12/cdp/NUM bulan/nnc/O yang/sc/O berakhir/vbi/O pada/in/O Juni/nn/O dan/cc/O 12/cdp/NUM bulan/nnc/O yang/sc/O berakhir/vbi/O pada/in/O September/nn/O 1988/cdp/NUM ././O
+Biaya/nn/O buruh\tenaga/nn/O kerja/nnu/O naik/nn/O pada/in/O tingkat/nnc/O yang/sc/O jauh/jj/O lebih/rb/O cepat/nnp/O dalam/in/O industri/nnu/O pelayanan/nnu/O kesehatan/nnu/O dibandingkan/vbi/O industri-industri/nn/O lainnya/nng/O ././O
+Sebagai/nn/O contoh/nnc/O ,/,/O gaji/nn/O pekerja/nnc/O rumah/nnc/LOC sakit/nnu/LOC swasta/jj/LOC meloncat/nn/O 6,6/jj/NUM %/sym/O dalam/in/O 12/cdp/NUM bulan/nnc/O yang/sc/O berakhir/vbi/O pada/in/O bulan/nnc/O September/nn/O ,/,/O dibanding/vbi/O dengan/in/O 4,4/cdp/NUM %/sym/O untuk/in/O pekerja/nnc/O di/in/O semua/cdi/O indsutri/nn/O ././O
+Pada/in/O kuartal/nn/O ketiga/cdo/NUM ,/,/O upah/nn/O dan/cc/O gaji/nn/O di/in/O semua/cdi/O industri/nnu/O swasta/jj/O naik/nn/O 1,2/jj/NUM %/sym/O ,/,/O dibandingkan/vbi/O dengan/in/O 1/cdp/NUM %/sym/O kenaikan/nn/O baik/jj/O dalam/in/O kuartal/nn/O ke/in/O dua/cdp/NUM dan/cc/O kuartal/nn/O ketiga/cdo/NUM tahun/nnc/O 1988/cdp/NUM ././O
+Dalam/nn/O lima/nn/NUM tahun/nnc/O terakhir/jj/O ,/,/O serikat-serikat/nn/O buruh/nn/O belum/neg/O berhasil/rb/O memenangkan/vbt/O kenaikan/nn/O gaji/nn/O sebesar/rb/O yang/sc/O diberikan/vbi/O pada/in/O perkerja/nn/O non/nn/O serikat/nn/O buruh/nn/O ././O
+Untuk/in/O serikat/nn/O buruh/nn/O swasta/jj/O ,/,/O biaya/nnc/O upah/nn/O dan/cc/O gaji/nn/O naik/nn/O 0,9/jj/NUM %/sym/O pada/in/O kuartal/nn/O ketiga/cdo/NUM ././O
+STT-PLN/nnp/ORG memiliki/vb/O jurusan/nn/ORG teknik/nn/ORG informatika/nn/ORG di/in/O lantai/nn/LOC 5/cdp/NUM
+Sekolah/nn/ORG Tinggi/jj/ORG Teknik/nn/ORG PLN/nnp/ORG adalah/vb/O perguruan/nn/ORG tinggi/jj/ORG yang/sc/O berada/vb/O di/in/O bawah/nn/O naungan/vb/O PLN/nnp/ORG (/(/O Perusahaan/nn/ORG Listrik/nn/LOC Negara/nn/ORG
+STTPLN/nnp/ORG merupakan/vb/O salah/jj/O satu/cdp/NUM perguruan/nn/ORG tinggi/jj/ORG di/in/O Jakarta/nnp/LOC Barat/nnp/LOC
+sttpln/nnp/ORG merupakan/vb/O salah/jj/O satu/cdp/NUM perguruan/nn/ORG tinggi/jj/ORG di/in/O jakarta/nnp/LOC barat/nnp/LOC
+stt-pln/nnp/ORG memiliki/vb/O jurusan/nn/O teknik/nn/ORG informatika/nn/ORG ,/,/O teknik/nn/ORG sipil/nn/ORG ,/,/O teknik/nn/ORG mesin/nn/ORG ,/,/O dan/cc/O teknik/nn/ORG elektro/nn/ORG
+Irfan/nnp/PER Hanandra/nnp/PER Pratama/nnp/PER seorang/nn/O mahasiswa/nn/O
+Hai/vb/O ,/,/O kamu/prp/O siapa/wh/QUE ?/?/O
+Siapa/wh/QUE kamu/prp/O ?/?/O
+Siapa/wh/QUE Irfan/nnp/PER ?/?/O
+Kamu/prp/O adalah/vb/O seorang/jj/O mahasiswa/nn/O ././O
+Dia/prp/O bangkit/vbi/O dari/in/O keterpurukan/nn/O ././O
+Rani/nnp/PER dan/cc/O Budi/nnp/PER duduk/vbi/O di/in/O bangku/nn/O ././O
+Mereka/prp/O sedang/rb/O bersepeda/vbi/O ././O
+Nia/nnp/PER sudah/rb/O datang/vbi/O ././O
+Daun/nn/O tanaman/nn/O itu/dt/O gugur/vbi/O ././O
+Binatang/nn/O itu/dt/O hidup/vbi/O ././O
+Kapal/nn/O karam/vbi/O di/in/O pulau/nn/LOC Bangka/nnp/LOC ././O
+Rama/nnp/PER ,/,/O Irfan/nnp/PER ,/,/O Widi/nnp/PER ,/,/O Fitri/nnp/PER dan/cc/O Dian/nnp/PER merupakan/vb/O asisten/nn/O laboratorium/nnp/LOC multimedia/nnp/LOC ././O
+Seluruh/cdi/O dosen/nn/O teknik/nn/ORG informatika/nn/ORG sedang/jj/O rapat/jj/O di/in/O lantai/nn/O 4/cdp/NUM
+Mahasiswa/nn/O dan/cc/O dosen/nn/O bisa/md/O menggunakan/vb/O lift/nn/O untuk/sc/O berpindah/vb/O dari/in/O satu/cdp/NUM lantai/nn/O ke/in/O lantai/nn/O lainnya/jj/O
+Lantai/nn/O 3/cdp/NUM memiliki/vb/O banyak/cdi/O ruangan/nn/O ,/,/O diantaranya/vb/O Laboratorium/nn/LOC Dasar/nn/LOC ,/,/O Laboratorium/nn/LOC Lanjut/nn/LOC ,/,/O Laboratorium/nn/LOC Open/fw/LOC Source/fw/LOC ,/,/O Laboratorium/nn/LOC Multimedia/nn/LOC ,/,/O ruangan/nn/LOC dosen/nn/LOC ,/,/O Laboratorium/nn/LOC Bahasa/nn/LOC Inggris/nnp/LOC dan/cc/O ruang/nn/LOC rapat/nn/O
+Lantai/nn/O 5/cdp/NUM merupakan/vb/O lantai/nn/O dari/in/O jurusan/nn/ORG teknik/nn/ORG informatika/nn/ORG
+Saya/prp/O ingin/rb/O mengetahui/vb/O kontak/nn/INTENT dosen/nn/INTENT
+Apakah/wh/QUE jika/sc/O saya/prp/O tidak/neg/O masuk/vb/O lebih/rb/O dari/in/O 4/cdp/NUM kali/vb/O tidak/neg/O bisa/md/O mengikuti/vb/O ujian/nn/O ?/?/O
+Bagaimana/wh/QUE prosedur/nn/O untuk/sc/O izin/nn/INTENT kuliah/nn/INTENT ?/?/O
+Saya/prp/O ingin/rb/O izin/nn/INTENT kuliah/nn/INTENT
+Kapan/wh/QUE dilaksanakan/vb/O ujian/nn/INTENT tengah/nn/INTENT semester/nn/INTENT atau/cc/O UTS/nnp/INTENT ?/?/O
+Kapan/wh/QUE dilaksanakan/vb/O ujian/nn/INTENT akhir/nn/INTENT semester/nn/INTENT atau/cc/O UAS/nnp/INTENT ?/?/O
+Pak/prp/O Rakhmat/nnp/PER Arianto/nnp/PER ,/,/O Pak/prp/O Abdul/nnp/PER Haris/nnp/PER ,/,/O Pak/prp/O Budi/nnp/PER ,/,/O Pak/prp/O Satrio/nnp/PER Yudho/nnp/PER ,/,/O Ibu/prp/O Yasni/nnp/PER Djamain/nnp/PER ,/,/O dan/cc/O beberapa/cdi/O dosen/nn/O lainnya/jj/O menempati/vb/O ruangan/nn/O di/in/O lantai/nn/O 3/cdp/NUM dari/IN/O gedung/nn/O utama/nn/O STT/nn/ORG -/-/O PLN/nnp/ORG
+Bapak/prp/O Abdurrasyid/nnp/PER menjabat/vb/O sebagai/in/O sekretaris/nn/O jurusan/nn/O ././O
+Laboratorium/nnp/LOC ITCC/nnp/LOC dan/CC/O Laboratorium/nnp/LOC Jaringan/nnp/LOC serta/cc/O Laboratorium/nnp/LOC Simulasi/nnp/LOC Dan/nnp/LOC Pemodelan/nnp/LOC sekaligus/uh/O Laboratorium/nnp/LOC Dasar/nnp/LOC 2/nnp/LOC berada/vb/O di/IN/O lantai/nn/O 5/cdp/NUM
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC multimedia/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC dasar/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC dasar/nnp/LOC 2/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC lanjut/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC open/nnp/LOC source/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC ITCC/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC simpel/nnp/LOC ?/?/O
+Di/in/QUE mana/wh/QUE lokasi/nn/INTENT laboratorium/nnp/LOC simulasi/nnp/LOC dan/nnp/O pemodelan/nnp/LOC ?/?/O
+Berapa/wh/QUE nomor/nn/INTENT Bapak/prp/O Darma/nnp/PER ?/?/O
+Nomor/nn/INTENT dosen/nn/INTENT banyak/cdi/O ditanyakan/vb/O oleh/in/O mahasiswa/nn/O
+Banyak/cdi/O mahasiswa/nn/O menanyakan/vbt/O kontak/nn/INTENT dosen/nn/INTENT ././O
+Ada/nn/O beberapa/cdi/O pertanyaan/nn/O ,/,/O siapa/wh/QUE ,/,/O dimana/wh/QUE ,/,/O apa/wh/QUE ,/,/O bagaimana/wh/QUE ,/,/O kapan/wh/QUE ,/,/O kenapa/wh/QUE ,/,/O apakah/wh/QUE ,/,/O siapakah/wh/QUE ,/,/O bagaimanakah/wh/QUE ,/,/O di/in/QUE mana/wh/QUE
+Pertanyaan/nn/O dengan/in/O kapital/nn/O Apa/wh/QUE ,/,/O Siapa/wh/QUE ,/,/O Dimana/wh/QUE ,/,/O Bagaimana/wh/QUE ,/,/O Kapan/wh/QUE ,/,/O Kenapa/wh/QUE ,/,/O Siapakah/wh/QUE ,/,/O Bagaimanakah/wh/QUE 
+Ibu/prp/O Dine/nnp/PER ,/,/O dan/cc/O Ibu/prp/O Yessy/nnp/PER sedang/rb/O di/in/O lantai/nn/O 4/cdp/NUM
+Skripsi/nn/INTENT merupakan/vb/O ujian/nn/INTENT untuk/in/O mahasiswa/nn/O tingkat/nnc/O akhir/nn/O
+Sering/jj/O sekali/cdi/O jadwal/nn/INTENT ujian/nn/INTENT tengah/nn/INTENT semester/nn/INTENT atau/cc/O UTS/nn/INTENT tidak/neg/O muncul/vb/O ././O
+UAS/nn/INTENT atau/cc/O ujian/nn/INTENT akhir/nn/INTENT semester/nn/INTENT membuat/vb/O mahasiswa/nn/O cemas/vbt/O
+ibu/prp/O yasni/nnp/PER djamain/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG multimedia/nnp/ORG
+ibu/prp/O yessy/nnp/PER asri/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG lanjut/nnp/ORG
+pak/prp/O rakhmat/nnp/PER arianto/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG open/fw/ORG source/fw/ORG atau/cc/O disebut/vb/O os/fw/ORG
+pak/prp/O abdul/nnp/PER haris/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG dasar/nn/ORG dan/cc/O dasar/nn/ORG 2/cdp/NUM
+pak/prp/O darma/nnp/PER rusjdi/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG simulasi/nnp/ORG dan/cc/ORG pemodelan/nnp/ORG atau/cc/O simpel/nnp/ORG
+pak/prp/O hendra/nnp/PER jatnika/nnp/PER adalah/vb/O kepala/nn/O laboratorium/nnp/ORG information/fw/ORG technology/fw/ORG certification/fw/ORG center/fw/ORG atau/cc/O itcc/fw/ORG ././O
+Mahasiswa/nn/O memikirkan/vbi/O syarat/nn/INTENT sidang/vb/INTENT ,/,/O format/fw/INTENT laporan/nn/INTENT ,/,/O batas/nn/O pengumpulan/vbt/INTENT dan/CC/O minimal/cdi/INTENT SKS/nn/INTENT dari/in/O mata/nn/INTENT kuliah/nn/INTENT magang/nn/INTENT
+Pada/in/O semester/nn/O 7/cdp/NUM ,/,/O mahasiswa/nn/O diperbolehkan/vbi/O untuk/in/O mengambil/vbt/O magang/nn/INTENT ././O
+Pada/in/O semester/nn/O 8/cdp/NUM ,/,/O mahasiswa/nn/O diperbolehkan/vbi/O untuk/in/O mengambil/vbt/O skripsi/nn/INTENT ././O
+1/cdp/NUM ,/,/O 2/cdp/NUM ,/,/O 3/cdp/NUM ,/,/O 4/cdp/NUM ,/,/O 5/cdp/NUM ,/,/O 6/cdp/NUM ,/,/O 7/cdp/NUM ,/,/O 8/cdp/NUM ,/,/O 9/cdp/NUM ././O
+Khusus/jj/O jurusan/nn/ORG teknik/nn/ORG informatika/nn/ORG ada/nn/O di/in/O lantai/nn/LOC 5/cdp/NUM tetapi/cc/O tidak/neg/O semua/cdi/O dosen/nn/O memiliki/vb/O ruangan/nn/O di/in/O lantai/nn/O 5/cdp/NUM ././O
+Ada/nn/O beberapa/cdi/O dosen/nn/O yang/sc/O ruangannya/nn/O di/in/O lantai/nn/LOC 11/cdp/NUM ,/,/O 2/cdp/NUM ,/,/O 3/cdp/NUM ,/,/O 4/cdp/NUM ././O
+Selain/neg/O nomor/nn/INTENT dosen/nn/INTENT ,/,/O mahasiswa/nn/O juga/cc/O bertanya/nn/INTENT tentang/in/O ruangan/nn/INTENT dosen/nn/INTENT
+Saya/prp/O ingin/rb/O keluar/vbi/INTENT ././O
+ibu/prp/O puji/nnp/PER catur/nnp/PER
+akhir/nn/O semester/nn/O saat/sc/O untuk/in/O ambil/vbi/INTENT semester/nn/INTENT pendek/jj/INTENT atau/cc/O SP/nn/INTENT
+ambil/vbi/INTENT SP/nn/INTENT adalah/vb/O semester/nn/INTENT pendek/jj/INTENT agar/in/O nilai/nn/O kamu/prp/O bagus/jj/O
+Ada/nn/O berapa/wh/QUE ruangan/nn/INTENT atau/cc/O jumlah/nn/O ruang/nn/INTENT di/in/O lantai/nn/O 5/cdp/NUM ?/?/O
+Saya/prp/O ingin/rb/O tahu/vbi/O ruangan/nn/INTENT ibu/prp/O meilia/nnp/PER ././O
+berapa/wh/QUE nomor/nn/INTENT dosen/nn/INTENT yang/sc/O ada/nn/O di/in/O handphone/fw/O kamu/prp/O ?/?/O
+berapa/wh/QUE nomor/nn/INTENT pak/prp/O ?/?/O
+berapa/wh/QUE nomor/nn/INTENT ibu/prp/O ?/?/O
+magang/nn/INTENT terdiri/vbi/O atas/in/O beberapa/cdi/O pertanyaan/nn/O ,/,/O antara/in/O lain/jj/O syarat/nn/INTENT sidang/vb/INTENT magang/nn/INTENT ,/,/O syarat/nn/INTENT sidang/vb/INTENT ,/,/O minimal/cdi/INTENT sks/nn/INTENT ,/,/O tempat/nn/INTENT kerja/nnu/INTENT magang/nn/INTENT ,/,/O tempat/nn/INTENT kerja/nnu/INTENT ,/,/O laporan/nn/INTENT magang/nn/INTENT ,/,/O laporan/nn/INTENT ,/,/O batas/nn/INTENT pengumpulan/vbt/INTENT ,/,/O format/fw/INTENT laporan/nn/INTENT ,/,/O format/fw/INTENT ,/,/O sidang/vb/INTENT magang/nn/INTENT ,/,/O pembimbing/prp/INTENT magang/nn/INTENT ,/,/O pembimbing/prp/INTENT
+skripsi/nn/INTENT terdiri/vbi/O atas/in/O beberapa/cdi/O pertanyaan/nn/O ,/,/O antara/in/O lain/jj/O syarat/nn/INTENT sidang/vb/INTENT skripsi/nn/INTENT ,/,/O syarat/nn/INTENT sidang/vb/INTENT ,/,/O minimal/cdi/INTENT sks/nn/INTENT ,/,/O penulisan/nn/INTENT skripsi/nn/INTENT ,/,/O penulisan/nn/INTENT ,/,/O batas/nn/INTENT pengumpulan/vbt/INTENT ,/,/O format/fw/INTENT penulisan/nn/INTENT ,/,/O format/fw/INTENT ,/,/O sidang/vb/INTENT skripsi/nn/INTENT ,/,/O pembimbing/prp/INTENT skripsi/nn/INTENT ,/,/O pembimbing/prp/INTENT ,/,/O pembimbing/prp/INTENT pertama/cdo/INTENT ,/,/O pembimbing/prp/INTENT kedua/cdo/INTENT
+wajib/jj/INTENT dan/cc/O pilihan/jj/INTENT 
+mata/nn/INTENT kuliah/nn/INTENT wajib/jj/INTENT harus/md/O diambil/vbi/O sedangkan/cc/O mata/nn/INTENT kuliah/nn/INTENT pilihan/jj/INTENT tidak/neg/O harus/md/O
+bagaimana/wh/QUE cara/nn/O saya/prp/O izin/nn/INTENT ?/?/O
+apa/wh/QUE saya/prp/O bisa/md/O izin/nn/INTENT sekarang/nn/O ?/?/O

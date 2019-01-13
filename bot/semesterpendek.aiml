@@ -1,0 +1,190 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- semesterpendek.aiml -->
+
+    <category>
+	    <pattern>INTENT SEMESTER * PENDEK</pattern>
+		<template>Apa yang ingin kamu ketahui tentang semester pendek (SP)?<think><set name="topic">SP</set></think></template>
+	</category>
+	
+	<category>
+	    <pattern>* INTENT SEMESTER PENDEK</pattern>
+		<template>Apa yang ingin kamu ketahui tentang semester pendek (SP)? <think><set name="topic">SP</set></think></template>
+	</category>
+	
+	<category>
+	    <pattern>* SP</pattern>
+		<template><srai>INTENT SEMESTER <star/> PENDEK</srai></template>
+	</category>
+	
+	<topic name="SP">
+	    <category>
+		    <pattern>QUESTION APA * SEMESTER * PENDEK</pattern>
+			<template>Semester pendek adalah sebuah semester yang jangka waktunya kurang lebih sebulan untuk mengulang mata kuliah. Biasanya diadakan saat liburan semester ganjil atau genap.<![CDATA[<html><br/></html>]]>Semester pendek digunakan untuk memperbaiki nilai.</template>
+		</category>
+		
+		 <category>
+		    <pattern>QUESTION APA * SEMESTER PENDEK</pattern>
+			<template>Semester pendek adalah sebuah semester yang jangka waktunya kurang lebih sebulan untuk mengulang mata kuliah. Biasanya diadakan saat liburan semester ganjil atau genap.<![CDATA[<html><br/></html>]]>Semester pendek digunakan untuk memperbaiki nilai.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * SP</pattern>
+		    <template><srai>QUESTION APA <star/> SEMESTER PENDEK</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * INTENT SYARAT * SP</pattern>
+			<template>1)Mata kuliah yang di-SP-kan harus sudah pernah diambil.<![CDATA[<html><br/></html>]]>2)Apabila sebelumnya mendapat nilai E, maka mata kuliah tersebut tidak bisa untuk semester pendek.<![CDATA[<html><br/></html>]]>3)Mata kuliah dengan nilai C bisa diulang dengan semester pendek.<![CDATA[<html><br/></html>]]>4)Untuk dibuka kelas SP, harus minimal ada 15 orang.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * OTHER SYARAT * SP</pattern>
+			<template>1)Mata kuliah yang di-SP-kan harus sudah pernah diambil.<![CDATA[<html><br/></html>]]>2)Apabila sebelumnya mendapat nilai E, maka mata kuliah tersebut tidak bisa untuk semester pendek.<![CDATA[<html><br/></html>]]>3)Mata kuliah dengan nilai C bisa diulang dengan semester pendek.<![CDATA[<html><br/></html>]]>4)Untuk dibuka kelas SP, harus minimal ada 15 orang.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * SYARAT * SEMESTER * PENDEK</pattern>
+			<template><srai>QUESTION APA <star/> OTHER SYARAT <star/> SP</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* SYARAT * SEMESTER * PENDEK</pattern>
+			<template><srai>QUESTION APA <star/> OTHER SYARAT <star/> SP</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* SYARATNYA * APA *</pattern>
+			<template><srai>QUESTION APA <star/> INTENT SYARAT <star/> SP</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * DAFTAR *</pattern>
+			<template>Untuk pendaftaran semester pendek prosedurnya sama seperti mengisi KRS pada awal tiap semester. Mengisi rencana studi melalui anjungan tapi pilih yang semester antara.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * DAFTAR</pattern>
+			<template><srai><star/> DAFTAR <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * MENDAFTAR *</pattern>
+			<template><srai><star/> DAFTAR <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * PENDAFTARAN *</pattern>
+			<template><srai><star/> DAFTAR <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * MENDAFTAR</pattern>
+			<template><srai><star/> DAFTAR <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION BAGAIMANA * PENDAFTARAN</pattern>
+			<template><srai><star/> DAFTAR <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * JADWAL * PENDAFTARAN</pattern>
+			<template>Informasi terkait jadwal pendaftaran atau pelaksanaan SP bersifat tentatif atau tidak tetap. Tergantung situasi dan kondisi sehingga kamu harus menunggu jadwal dari jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * JADWAL * PENDAFTARANNYA</pattern>
+			<template>Informasi terkait jadwal pendaftaran atau pelaksanaan SP bersifat tentatif atau tidak tetap. Tergantung situasi dan kondisi sehingga kamu harus menunggu jadwal dari jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * JADWAL * PENDAFTARAN * DIBUKA</pattern>
+			<template>Informasi terkait jadwal pendaftaran atau pelaksanaan SP bersifat tentatif atau tidak tetap. Tergantung situasi dan kondisi sehingga kamu harus menunggu jadwal dari jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * KELAS * DIBUKA</pattern>
+			<template>Pembukaan kelas untuk semester pendek bergantung pada pengajuan mahasiswa. Apabila mencapai 15 orang, maka kelas akan dibuka.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * JADWAL * SEMESTER * PENDEK</pattern>
+			<template><srai><star/> JADWAL <star/> PENDAFTARAN</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION KAPAN * JADWAL * SP</pattern>
+			<template><srai><star/> JADWAL <star/> PENDAFTARAN</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* MATAKULIAH * APA *</pattern>
+			<template>Mata kuliah yang ada di semester pendek berasal dari pengajuan mahasiswa. Jadi, jika ingin buka kelas, ajak 14 temanmu yang lain untuk mengulang mata kuliah di semester pendek.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * MATAKULIAH *</pattern>
+			<template>Untuk mengetahui mata kuliah apa saja yang sekarang buka kelasnya, bisa melihat anjungan atau pengumuman dari jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION APA * MATA * KULIAH</pattern>
+			<template><srai><star/> MATAKULIAH <star/> APA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* MATA * KULIAH * APA</pattern>
+			<template><srai><star/> MATAKULIAH <star/> APA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* BUKA * KELAS</pattern>
+			<template><srai><star/> MATAKULIAH <star/> APA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * A</pattern>
+			<template>Nilai A tidak perlu mengambil semester pendek. Banyak-banyak bersyukur.</template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * B</pattern>
+			<template>Nilai B tidak perlu mengambil semester pendek. Banyak-banyak bersyukur.</template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * C</pattern>
+			<template>Segera ambil semester pendek untuk memperbaiki nilai kamu.</template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * D</pattern>
+			<template>Mohon maaf, kamu tidak bisa mengulang mata kuliah itu di semester pendek. Kamu harus mengulangnya di semester biasa.</template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * A *</pattern>
+			<template><srai><star/> NILAI <star/> A</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * B *</pattern>
+            <template><srai><star/> NILAI <star/> B</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * C *</pattern>
+			<template><srai><star/> NILAI <star/> C</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* NILAI * D *</pattern>
+			<template><srai><star/> NILAI <star/> D</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>*</pattern>
+			<template>Maaf mungkin bisa lebih jelas lagi kamu ingin bertanya apa dari semester pendek?</template>
+		</category>
+	</topic>
+</aiml>

@@ -1,0 +1,1074 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- kontak_dosen.aiml -->
+
+    <category>
+        <pattern>INTENT KONTAK DOSEN</pattern>
+        <template>
+		    <random>
+                <li>Boleh. Kontak dosen siapa ya? (Awali dengan Pak atau Ibu diikuti dengan nama)</li> 
+                <li>Kamu mau kontak dosen siapa? Mohon sebutkan nama (Awali dengan Pak atau Ibu diikuti dengan nama)</li> 
+                <li>Anda ingin meminta kontak dosen siapa ya? (Awali dengan Pak atau Ibu diikuti dengan nama)</li> 
+			</random>
+			<think><set name="topic">KONTAK</set></think>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>INTENT KONTAK DOSEN *</pattern>
+        <template>
+		    <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* INTENT KONTAK DOSEN *</pattern>
+        <template>
+		    <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>INTENT KONTAK OTHER DOSEN</pattern>
+        <template>
+		   <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>INTENT KONTAK OTHER DOSEN *</pattern>
+        <template>
+		    <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* INTENT KONTAK OTHER DOSEN</pattern>
+        <template>
+		   <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* INTENT KONTAK OTHER DOSEN *</pattern>
+        <template>
+		   <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ KONTAK * DOSEN</pattern>
+        <template>
+		    <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ KONTAK * DOSEN *</pattern>
+        <template>
+		    <srai>INTENT KONTAK DOSEN</srai>
+        </template>
+    </category>
+	
+	<topic name="KONTAK">
+		<category>
+			<pattern>OTHER PAK * ABDUL * HARIS</pattern>
+			<template>Pak Abdul Haris: 0819-3172-9530</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK PERSON ABDUL HARIS</pattern>
+			<template>Pak Abdul Haris: 0819-3172-9530</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * HARIS</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ABDUL <star/> HARIS</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ABDUL * ROKHIM</pattern>
+			
+			<template>Pak Abdul Rokhim: 0815-885-0743</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ABDURRASYID</pattern>
+			
+			<template>Pak Abdurrasyid: 0817-9888-420</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * OCID</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ABDURRASYID</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ACHMAD * BACHTIAR * ZEN</pattern>
+			
+			<template>Pak Achmad Bachtiar Zen: 0813-8007-6763</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ZEN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ACHMAD <star/> BACHTIAR <star/> ZEN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ADMIN</pattern>
+			
+			<template>Pak Admin: 0818-0873-5158</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * AHMAD * SJAIFULLAH</pattern>
+			
+			<template>Pak Ahmad Sjaifullah: 0812-8540-1508</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SYAIFULLAH</pattern>
+			<template><srai>OTHER PAK <star/> AHMAD <star/> SJAIFULLAH</srai></template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * AGUS * SALIM</pattern>
+			
+			<template>Pak Agus Salim: 0811-1499-439</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ALIT * BONDAN</pattern>
+			
+			<template>Pak Alit Bondan: 0813-1725-2553</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ALIT</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ALIT <star/> BONDAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * BONDAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ALIT <star/> BONDAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * ALOMA * SARUMAHA</pattern>
+			
+			<template>Ibu Aloma Sarumaha: 0812-6386-9455</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * ASSISTIA * SEMIAWAN</pattern>
+			
+			<template>Ibu Assistia Semiawan: 0811-1666-0307</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * BAMBANG * CAHYADI</pattern>
+			
+			<template>Pak Bambang Cahyadi: 0815-1432-0442</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * DARMA * RUSJDI</pattern>
+			
+			<template>Pak Darma Rusjdi: 0812-968-8062</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK PERSON DARMA RUSJDI</pattern>
+			
+			<template>Pak Darma Rusjdi: 0812-968-8062</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * DARMA</pattern>
+			<template>
+				<srai>OTHER PAK <star/> DARMA <star/> RUSJDI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DEWI * ARIANTI</pattern>
+			
+			<template>Ibu Dewi Arianti: 0816-1934-980</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DEWI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> DEWI <star/> ARIANTI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DIAN * HARTANTI</pattern>
+			
+			<template>Ibu Dian Hartanti: 0815-898-8384</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DIAN</pattern>
+			<template>
+				<srai>OTHER IBU <star/> DIAN <star/> HARTANTI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DINE * TIARA * KUSUMA</pattern>
+			
+			<template>Ibu Dine Tiara Kusuma: 0821-1265-5596</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DINE</pattern>
+			<template>
+				<srai>OTHER IBU <star/> DINE <star/> TIARA <star/> KUSUMA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DWINA * KUSWARDANI</pattern>
+			
+			<template>Ibu Dwina Kuswardani: 0812-9053-436</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * DWINA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> DWINA <star/> KUSWARDANI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * EFI * YOSRITA</pattern>
+			
+			<template>Ibu Efi Yosrita: 0856-891-3538</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * EFI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> EFI <star/> YOSRITA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * EFY</pattern>
+			<template>
+				<srai>OTHER IBU <star/> EFI <star/> YOSRITA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ENDANG * SUNANDAR</pattern>
+			
+			<template>Pak Endang Sunandar: 0818-0952-6788</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * ENDANG</pattern>
+			<template>
+				<srai>OTHER PAK <star/> ENDANG <star/> SUNANDAR</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * FARIDHIAN * ANSHARI</pattern>
+			
+			<template>Pak Faridhian Anshari: 0856-2875-747</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * GANDHI * RIFAI</pattern>
+			
+			<template>Pak Gandhi Rifai: 0858-8289-0000</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * GREGORIUS * HENDITA</pattern>
+			
+			<template>Pak Gregorius Hendita: 0817-463-976</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * GREG</pattern>
+			<template>
+				<srai>OTHER PAK <star/> GREGORIUS <star/> HENDITA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * HERMAN * BEDI * AGTRIADI</pattern>
+			
+			<template>Pak Herman Bedi Agtriadi: 0812-2111-1696</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * BEDI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> HERMAN <star/> BEDI <star/> AGTRIADI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * I *JOKO * DEWANTO</pattern>
+			
+			<template>Pak I Joko Dewanto: 0815-9135-080</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * INDRIANTO</pattern>
+			
+			<template>Pak Indrianto: 0815-8064-686</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * INDRI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> INDRIANTO</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * IRFAN * SEMBIRING</pattern>
+			
+			<template>Pak Irfan Sembiring: 0818-95-4531</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * IRFAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> IRFAN <star/> SEMBIRING</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * IRIANSYAH * BM * SANGADJI</pattern>
+			
+			<template>Pak Iriansyah BM Sangadji: 0813-1661-3458</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * IRIANSYAH</pattern>
+			<template>
+				<srai>OTHER PAK <star/> IRIANSYAH <star/> BM <star/> SANGADJI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * IR</pattern>
+			<template>
+				<srai>OTHER PAK <star/> IRIANSYAH <star/> BM <star/> SANGADJI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * JB * RUMAHLEWANG</pattern>
+			
+			<template>Pak JB Rumahlewang: 0815-1174-1070</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * KARINA * DJUNAIDI</pattern>
+			
+			<template>Ibu Karina Djunaidi: 0852-8114-0589</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * KARINA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> KARINA <star/> DJUNAIDI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * KISMAN * H * MAHMUD</pattern>
+			
+			<template>Pak Kisman H Mahmud: 0812-955-3791</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * KISMAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> KISMAN <star/> H <star/> MAHMUD</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * LINDA * FUJIYANTI</pattern>
+			
+			<template>Ibu Linda Fujiyanti: 081-1188-8722</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * LINDA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> LINDA <star/> FUJIYANTI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * LUQMAN</pattern>
+			
+			<template>Pak Luqman: 0815-1429-7000</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * M * YOGA * DISTRA * SUDIRMAN</pattern>
+			
+			<template>Pak M. Yoga Distra Sudirman: 0856-7572-870</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * YOGA</pattern>
+			<template>
+				<srai>OTHER PAK <star/> M <star/> YOGA <star/> DISTRA <star/> SUDIRMAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MANEREP * PASARIBU</pattern>
+			
+			<template>Pak Manerep Pasaribu: 0811-383-661</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MANEREP</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MANEREP <star/> PASARIBU</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MANSYUR * SAFI I </pattern>
+			
+			<template>Pak Mansyur Safi'i: esia 92451464</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MANSYUR</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MANSYUR <star/> SAFI I</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * MEILIA * NUR * INDAH</pattern>
+			
+			<template>Ibu Meilia Nur Indah: 0816-111-4298</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * MEILI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * MELI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * MEILIA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> MEILIA <star/> NUR <star/> INDAH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MUHAMMAD * JAFAR * ELLY</pattern>
+			
+			<template>Pak Muhammad Jafar Elly: 0816-117-4874</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * JAFAR</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MUHAMMAD <star/> JAFAR <star/> ELLY</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * JAFAR * ELLY</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MUHAMMAD <star/> JAFAR <star/> ELLY</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MUHAMAD * JONNI</pattern>
+			
+			<template>Pak Muhamad Jonni: 0812-9059-5505</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * JONI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MUHAMAD <star/> JONNI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * JONNI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MUHAMAD <star/> JONNI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * MUHAMMAD * JONNI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> MUHAMAD <star/> JONNI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * PUJI * CATUR * S * PRAPTINI</pattern>
+			
+			<template>Ibu Puji Catur S. Praptini: 0838-7906-0234</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * PUJI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> PUJI <star/> CATUR <star/> S <star/> PRAPTINI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * PUJI * CATUR</pattern>
+			<template>
+				<srai>OTHER IBU <star/> PUJI <star/> CATUR <star/> S <star/> PRAPTINI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * RAHMA * FARAH * NINGRUM</pattern>
+			
+			<template>Ibu Rahma Farah Ningrum: 0812-8730-166</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * RAHMA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> RAHMA <star/> FARAH <star/> NINGRUM</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAD * EVAN * PURNAWAN</pattern>
+			
+			<template>Pak Rahmad Evan Purnawan: 0813-6565-0011</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAD * EVAN</pattern>
+			<that>OTHER PAK * RAHMAD * EVAN * ATAU * PAK * RAKHMAT * ARIANTO</that>
+			<template>Pak Rahmad Evan Purnawan: 0813-6565-0011</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * EVAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAD * EVAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAT * EVAN</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RAHMAD <star/> EVAN <star/> PURNAWAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAT</pattern>
+			<template>
+				Pak Rahmad Evan atau Pak Rakhmat Arianto?
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAHMAD</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RAHMAT</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAKHMAT * ARIANTO</pattern>
+			
+			<template>Pak Rakhmat Arianto: 0838-4998-8070</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK PERSON RAKHMAT ARIANTO</pattern>
+			
+			<template>Pak Rakhmat Arianto: 0838-4998-8070</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAKHMAT</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RAKHMAT <star/> ARIANTO</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAKHMAT * ARIANTO</pattern>
+			<that>OTHER PAK * RAHMAD * EVAN * ATAU * PAK * RAKHMAT * ARIANTO</that>
+			<template>Pak Rakhmat Arianto: 0838-4998-8070</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAKHMADI * IRFANSYAH * PUTRA</pattern>
+			
+			<template>Pak Rakhmadi Irfansyah Putra: 0812-135-7961</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RAKHMADI</pattern>
+			<template>
+				Pak Rakhmadi Irfansyah Putra: 0812-135-7961
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * RETNO * ASTA * DIANTARI</pattern>
+			
+			<template>Ibu Retno Asta Diantari: 0896-3541-9602</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * REZI * ARLANSYAH * SORI * PADA</pattern>
+			
+			<template>Pak Rezi Arlansyah Sori Pada: 0815-184-0096</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * REZI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> REZI <star/> ARLANSYAH <star/> SORI <star/> PADA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * REZI * ARLANSYAH</pattern>
+			<template>
+				<srai>OTHER PAK <star/> REZI <star/> ARLANSYAH <star/> SORI <star/> PADA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RIKI * RULI * AFFANDI * SIREGAR</pattern>
+			
+			<template>Pak Riki Ruli Affandi Siregar: 0813-1630-7758</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RIKI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RIKI <star/> RULI <star/> AFFANDI <star/> SIREGAR</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RIKI * RULI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> RIKI <star/> RULI <star/> AFFANDI <star/> SIREGAR</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * RIZQIA * CAHYANINGTYAS</pattern>
+			
+			<template>Ibu Rizqia Cahyaningtyas: 0815-160-6481</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * KIKI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> RIZQIA <star/> CAHYANINGTYAS</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * RIZQIA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> RIZQIA <star/> CAHYANINGTYAS</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * ROSIDA * NUR * AZIZA</pattern>
+			
+			<template>Ibu Rosida Nur Aziza: 0822-1195-0016</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * ROSIDA</pattern>
+			<template>
+				<srai>OTHER IBU <star/> ROSIDA <star/> NUR <star/> AZIZA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * RUDOLF * EFRUAN</pattern>
+			
+			<template>Pak Rudolf Efruan: 0813-8876-3266</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SARIP * HIDAYATULOH</pattern>
+			
+			<template>Pak Sarip Hidayatuloh: 0813-8677-7421</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SARIP</pattern>
+			<template>
+				<srai>OTHER PAK <star/> SARIP <star/> HIDAYATULOH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * SARWATI * RAHAYU</pattern>
+			
+			<template>Ibu Sarwati Rahayu: 0812-1020-7100</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * SELY * KARMILA</pattern>
+			
+			<template>Ibu Sely Karmila: 0852-1972-8788</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * SELY</pattern>
+			<template>
+				<srai>OTHER IBU <star/> SELY <star/> KARMILA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SIGIT * SUKMAJATI</pattern>
+			
+			<template>Pak Sigit Sukmajati: 0813-8953-3409</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SIGIT</pattern>
+			<template>
+				<srai>OTHER PAK <star/> SIGIT <star/> SUKMAJATI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SUKRI * MURSANI</pattern>
+			
+			<template>Pak Sukri Mursani: 021-5495303</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SUKRI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> SUKRI <star/> MURSANI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * SYAIFUDDIN</pattern>
+			
+			<template>Pak Syaifuddin: 0812-951-3950</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * TONY * KOERNIAWAN</pattern>
+			
+			<template>Pak Tony Koerniawan: 0857-1701-7005</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * TONY</pattern>
+			<template>
+				<srai>OTHER PAK <star/> TONY <star/> KOERNIAWAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * TONI</pattern>
+			<template>
+				<srai>OTHER PAK <star/> TONY <star/> KOERNIAWAN</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * UMI * MARFUAH</pattern>
+			
+			<template>Ibu Umi Marfuah: 0816-18520-358</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * UMI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> UMI <star/> MARFUAH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * WAHJOENI * S * MUHARDI</pattern>
+			
+			<template>Ibu Wahjoeni S. Muhardi: 0821-1459-4448</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * WAHYUNI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> WAHJOENI <star/> S <star/> MUHARDI</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * WISNU * HENDRO * MARTONO</pattern>
+			
+			<template>Pak Wisnu Hendro Martono: 0838-9102-5514</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER PAK * WISNU</pattern>
+			<template>
+				<srai>OTHER PAK <star/> WISNU <star/> HENDRO <star/> MARTONO</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YESSY * ASRI</pattern>
+			
+			<template>Ibu Yessy Asri: 0856-1127-772</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU PERSON YESSY ASRI</pattern>
+			
+			<template>Ibu Yessy Asri: 0856-1127-772</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YESSY * ASRI</pattern>
+			<that>IBU YESSY FITRIANI ATAU IBU YESSY ASRI</that>
+			<template>Ibu Yessy Asri: 0856-1127-772</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YESSY</pattern>
+			<template>
+				Ibu Yessy Fitriani atau Ibu Yessy Asri?
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YESSY * FITRIANI</pattern>
+			
+			<template>Ibu Yessy Fitriani: 0813-9858-5454</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YESSY * FITRIANI</pattern>
+			<that>IBU YESSY FITRIANI ATAU IBU YESSY ASRI</that>
+			<template>Ibu Yessy Fitriani: 0813-9858-5454</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YASNI * DJAMAIN</pattern>
+			
+			<template>Ibu Yasni Djamain: 0812-813-4913</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU PERSON YASNI DJAMAIN</pattern>
+			
+			<template>Ibu Yasni Djamain: 0812-813-4913</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER IBU * YASNI</pattern>
+			<template>
+				<srai>OTHER IBU <star/> YASNI <star/> DJAMAIN</srai>
+			</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * ANDI * DAHRONI</pattern>
+			<template>Pak Andi Dahroni: 085317164416</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * ANDI</pattern>
+			<template><srai>OTHER PAK <star/> ANDI <star/> DAHRONI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * SATRIO * YUDHO</pattern>
+			<template>Pak Satrio Yudho: 085218004447</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * SATRIO</pattern>
+			<template><srai>OTHER PAK <star/> SATRIO <star/> YUDHO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * YUDHO</pattern>
+			<template><srai>OTHER PAK <star/> SATRIO <star/> YUDHO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * FADLI</pattern>
+			<template>Pak Muhammad Fadli Prathama: 085769601661</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * MUHAMMAD * FADLI * PRATHAMA</pattern>
+			<template><srai>OTHER PAK <star/> FADLI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * YUDHY</pattern>
+			<template>Pak Yudhy Setiawan: 085860854757</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * YUDHY * SETIAWAN</pattern>
+			<template><srai>OTHER PAK <star/> YUDHY</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK PERSON HENDRA JATNIKA</pattern>
+			<template>Pak Hendra Jatnika: 081220123467</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * HENDRA * JATNIKA</pattern>
+			<template><srai>OTHER PAK PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * JATNIKA</pattern>
+			<template><srai>OTHER PAK PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * JAT</pattern>
+			<template><srai>OTHER PAK PERSON HENDRA JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER IBU * PRITA</pattern>
+			<template>Ibu Pritasari Palupiningsih: 085717735945</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER IBU * PRITASARI * PALUPININGSIH</pattern>
+			<template><srai>OTHER IBU <star/> PRITA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER IBU * PRITASARI</pattern>
+			<template><srai>OTHER IBU <star/> PRITA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * EKA * PUTRA</pattern>
+			<template>Pak Eka Putra: 085265792254</template>
+		</category>
+		
+		<category>
+		    <pattern>OTHER PAK * EKA</pattern>
+			<template><srai>OTHER PAK <star/> EKA <star/> PUTRA</srai></template>
+		</category>
+
+		<category>
+	    <pattern>OTHER TERIMA OTHER KASIH</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			Sama-sama. Ada lagi yang bisa dibantu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER OKE</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER BAIK</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER THANK OTHER YOU</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER THANKS</pattern>
+		<template>
+			<srai>TERIMA KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Apa itu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER TIDAK OTHER ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Mungkin Anda ingin menanyakan hal lain?
+		</template>
+	</category>
+		
+		<category>
+			<pattern>*</pattern>
+			<template>
+				Maaf mungkin namanya bisa lebih jelas lagi? Mohon tambahkan Pak atau Ibu di depan nama dosen.
+			</template>
+		</category>
+    </topic>
+    
+</aiml>

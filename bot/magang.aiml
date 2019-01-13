@@ -1,0 +1,257 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- magang.aiml -->
+
+    <category>
+        <pattern>* INTENT MAGANG</pattern>
+	    <template>
+	        <think><set name="topic">MAGANG</set></think>
+		    Apa yang ingin kamu ketahui tentang magang? (Minimal sks, syarat sidang magang, tempat kerja magang, laporan magang)
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* INTENT MAGANG *</pattern>
+	    <template>
+	        <think><set name="topic">MAGANG</set></think>
+		    Apa yang ingin kamu ketahui tentang magang? (Minimal sks, syarat sidang magang, tempat kerja magang, laporan magang)
+	    </template>
+    </category>
+
+	<topic name="MAGANG">
+	    <category>
+		    <pattern>OTHER SEMESTER * MAGANG</pattern>
+			<template>Untuk mengambil mata kuliah magang, harus minimal berada di semester 7 dan tidak boleh mengambil mata kuliah selain magang kecuali saat semester 8 kamu bisa ambil bersama dengan skripsi.</template>
+		</category>
+		
+		<category>
+		    <pattern>* OTHER SEMESTER * MAGANG</pattern>
+			<template><srai>OTHER SEMESTER <star/> MAGANG</srai></template>
+		</category>
+		
+		<category>
+			<pattern>* MINIMAL * SKS * MAGANG</pattern>
+			<template>Minimal untuk mengambil mata kuliah magang, kamu harus sudah lulus 100 SKS.</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT MINIMAL SKS OTHER MAGANG</pattern>
+			<template>Minimal untuk mengambil mata kuliah magang, kamu harus sudah lulus 100 SKS.</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT MINIMAL SKS OTHER MAGANG</pattern>
+			<template>Minimal untuk mengambil mata kuliah magang, kamu harus sudah lulus 100 SKS.</template>
+		</category>
+		
+		<category>
+			<pattern>* MINIMAL * SKS</pattern>
+			<template>
+			    <srai>INTENT MINIMAL SKS OTHER MAGANG</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* MINIMAL * SKS * MAGANG *</pattern>
+			<template>
+			    <srai>INTENT MINIMAL SKS OTHER MAGANG</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* MINIMAL * SKSNYA</pattern>
+			<template>
+			    <srai>INTENT MINIMAL SKS OTHER MAGANG</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* SYARAT * SIDANG</pattern>
+			<template>1) Menyerahkan lembar pengesahan laporan kerja magang yang sudah di acc oleh dosen pembimbing kerja magang dan pembimbing lapangan.<![CDATA[<html><br/></html>]]>2) Surat selesai kerja magang.<![CDATA[<html><br/></html>]]>3)Laporan RPKM, harian, mingguan, sesuai format yang ditentukan.</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT SYARAT SIDANG MAGANG</pattern>
+			<template>1) Menyerahkan lembar pengesahan laporan kerja magang yang sudah di acc oleh dosen pembimbing kerja magang dan pembimbing lapangan.<![CDATA[<html><br/></html>]]>2) Surat selesai kerja magang.<![CDATA[<html><br/></html>]]>3)Laporan RPKM, harian, mingguan, sesuai format yang ditentukan.</template>
+		</category>
+		
+		<category>
+			<pattern>* SYARAT SIDANG MAGANG</pattern>
+			<template>1) Menyerahkan lembar pengesahan laporan kerja magang yang sudah di acc oleh dosen pembimbing kerja magang dan pembimbing lapangan.<![CDATA[<html><br/></html>]]>2) Surat selesai kerja magang.<![CDATA[<html><br/></html>]]>3)Laporan RPKM, harian, mingguan, sesuai format yang ditentukan.</template>
+		</category>
+		
+		<category>
+			<pattern>* SYARAT * SIDANG * MAGANG</pattern>
+			<template>1) Menyerahkan lembar pengesahan laporan kerja magang yang sudah di acc oleh dosen pembimbing kerja magang dan pembimbing lapangan.<![CDATA[<html><br/></html>]]>2) Surat selesai kerja magang.<![CDATA[<html><br/></html>]]>3)Laporan RPKM, harian, mingguan, sesuai format yang ditentukan.</template>
+		</category>
+		
+		<category>
+			<pattern>* TEMPAT * KERJA</pattern>
+			<template>Kamu bebas memilih tempat magang kamu. Yang penting masih berhubungan dengan IT dan yang kamu kerjakan tidak cuma bikin kopi dan fotokopi.</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT TEMPAT KERJA MAGANG</pattern>
+			<template>Kamu bebas memilih tempat magang kamu. Yang penting masih berhubungan dengan IT dan yang kamu kerjakan tidak cuma bikin kopi dan fotokopi.<![CDATA[<html><br></br></html>]]>Atau bila kesulitan mencari tempat magang, bisa menghubungi jurusan.</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT TEMPAT KERJA MAGANG</pattern>
+			<template>Kamu bebas memilih tempat magang kamu. Yang penting masih berhubungan dengan IT dan yang kamu kerjakan tidak cuma bikin kopi dan fotokopi.<![CDATA[<html><br></br></html>]]>Atau bila kesulitan mencari tempat magang, bisa menghubungi jurusan.</template>
+		</category>
+		
+		<category>
+			<pattern>* TEMPAT * KERJA * MAGANG</pattern>
+			<template>Kamu bebas memilih tempat magang kamu. Yang penting masih berhubungan dengan IT dan yang kamu kerjakan tidak cuma bikin kopi dan fotokopi.</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT FORMAT</pattern>
+			<template>Kamu bisa unduh format laporan magang di situs resmi STT-PLN di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT FORMAT LAPORAN</pattern>
+			<template>Kamu bisa unduh format laporan magang di situs resmi STT-PLN di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT FORMAT LAPORAN</pattern>
+			<template>Kamu bisa unduh format laporan magang di situs resmi STT-PLN di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+			<pattern>* LAPORAN * MAGANG</pattern>
+			<template>Kamu bisa unduh format laporan magang di situs resmi STT-PLN di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+			<pattern>* PEDOMAN INTENT LAPORAN MAGANG</pattern>
+			<template><srai>INTENT FORMAT LAPORAN</srai></template>
+		</category>
+		
+		<category>
+			<pattern>* PENGUMPULAN * LAPORAN</pattern>
+			<template>Awal mulai ataupun batas akhir pengumpulan akan diberitahukan saat jadwal sudah ada. Jadwal ini bisa berubah-ubah sesuai keadaan.</template>
+		</category>
+		
+		<category>
+			<pattern>* PENGUMPULAN INTENT LAPORAN MAGANG</pattern>
+			<template><srai><star/>PENGUMPULAN <star/> LAPORAN</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>INTENT PEMBIMBING MAGANG</pattern>
+			<template>Pembimbing akademik magang ditentukan oleh jurusan. Sementara, pembimbing lapangan adalah pengawas di tempat magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>* INTENT PEMBIMBING MAGANG</pattern>
+			<template>Pembimbing akademik magang ditentukan oleh jurusan. Sementara, pembimbing lapangan adalah pengawas di tempat magang.</template>
+		</category>
+		
+		<category>
+		    <pattern>* LEMBAR * PENGESAHAN * MAGANG</pattern>
+			<template>Lembar pengesahan, RPKM, dan semua format lainnya ada di pedoman laporan kerja magang yang bisa kamu unduh di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+		    <pattern>* LEMBAR * PENGESAHAN</pattern>
+			<template>Lembar pengesahan, RPKM, dan semua format lainnya ada di pedoman laporan kerja magang yang bisa kamu unduh di sttpln.ac.id</template>
+		</category>
+		
+		<category>
+			<pattern>INTENT LAPORAN MAGANG</pattern>
+			<template>Apa yang ingin kamu ketahui tentang laporan magang?(format, batas pengumpulan)</template>
+		</category>
+		
+		<category>
+			<pattern>* INTENT LAPORAN MAGANG</pattern>
+			<template>Apa yang ingin kamu ketahui tentang laporan magang?(format, batas pengumpulan)</template>
+		</category>
+		
+		<category>
+		    <pattern>INTENT FORMAT LAPORAN</pattern>
+			<that>* TENTANG LAPORAN MAGANG *</that>
+			<template>Bisa kamu unduh di website resmi STT-PLN yaitu www.sttpln.ac.id</template>
+		</category>
+		
+		<category>
+		    <pattern>INTENT FORMAT</pattern>
+			<that>* TENTANG LAPORAN MAGANG *</that>
+			<template>Bisa kamu unduh di website resmi STT-PLN yaitu www.sttpln.ac.id</template>
+		</category>
+		
+		<category>
+		    <pattern>* BATAS * PENGUMPULAN * LAPORAN</pattern>
+			<that>* TENTANG LAPORAN MAGANG *</that>
+			<template>Untuk jadwal pasti akan diberitahukan oleh jurusan. Tetapi dari semester sebelumnya apabila untuk semester ganjil pada bulan Januari dan semester genap mulai dari bulan Mei.</template>
+		</category>
+		
+		<category>
+		    <pattern>INTENT BATAS PENGUMPULAN</pattern>
+			<that>* TENTANG LAPORAN MAGANG *</that>
+			<template>Untuk jadwal pasti akan diberitahukan oleh jurusan. Tetapi dari semester sebelumnya apabila untuk semester ganjil pada bulan Januari dan semester genap mulai dari bulan Mei.</template>
+		</category>
+		
+		<category>
+		    <pattern>* INTENT BATAS PENGUMPULAN</pattern>
+			<that>* TENTANG LAPORAN MAGANG *</that>
+			<template>Untuk jadwal pasti akan diberitahukan oleh jurusan. Tetapi dari semester sebelumnya apabila untuk semester ganjil pada bulan Januari dan semester genap mulai dari bulan Mei.</template>
+		</category>
+		
+		<category>
+	    <pattern>* TERIMA * KASIH</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			Sama-sama. Ada lagi yang bisa dibantu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* OKE</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BAIK</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANK * YOU</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANKS</pattern>
+		<template>
+			<srai>TERIMA KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Apa itu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TIDAK * ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Mungkin Anda ingin menanyakan hal lain?
+		</template>
+	</category>
+	</topic>
+</aiml>

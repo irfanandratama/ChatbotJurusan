@@ -1,0 +1,507 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- ruanglab.aiml -->
+
+    <category>
+	    <pattern>* RUANGAN * LAB</pattern>
+		<template> Apakah kamu ingin mengetahui lokasi dari laboratorium? Laboratorium apa?<think><set name="topic">RUANGLAB</set></think></template>
+	</category>
+	
+	<category>
+	    <pattern>* RUANGAN * LABORATORIUM</pattern>
+		<template><srai><star/> RUANGAN <star/> LAB</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>* INTENT RUANGAN * LABORATORIUM</pattern>
+		<template><srai><star/> RUANGAN <star/> LAB</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>* INTENT RUANGAN * LABORATORIUM *</pattern>
+		<template><srai><star/> RUANGAN <star/> LAB</srai></template>
+	</category>
+	
+	<topic name="RUANGLAB">
+	    <category>
+			<pattern>LOCATION LABORATORIUM DASAR</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 3 berdekatan dengan laboratorium komputer open source. Bila dari lift, belok ke kanan hingga ujung lalu ke kiri.
+			</template>
+		</category>
+			
+		<category>
+			<pattern>LOCATION LABORATORIUM OPEN SOURCE</pattern>
+			<template>
+				Laboratorium Komputer Open Source ada di lantai 3 berdekatan dengan laboratorium komputer dasar. Bila dari lift, belok ke kanan hingga ujung lalu ke kanan.
+			</template>
+        </category>
+	
+		<category>
+			<pattern>LOCATION LABORATORIUM LANJUT</pattern>
+			<template>
+				Laboratorium Komputer Lanjut ada di lantai 3. Bila dari lift, akan langsung terlihat laboratorium komputer lanjut.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM MULTIMEDIA</pattern>
+			<template>
+				Laboratorium Komputer Multimedia ada di lantai 3 Bila dari lift, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM OS</pattern>
+			<template>
+				<srai>LOCATION LABORATORIUM OPEN SOURCE</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM MULTI</pattern>
+			<template>
+				<srai>LOCATION LABORATORIUM MULTIMEDIA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM DASAR * 2</pattern>
+			<template>
+				Laboratorium Komputer Dasar 2 ada di lantai 5 berdekatan dengan laboratorium komputer simulasi dan pemodelan. Sebelum masuk ke ruang jurusan, belok ke kiri ke arah laboratorium simulasi dan pemodelan lalu ke kanan.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM SIMULASI DAN PEMODELAN</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM SIMPEL</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM ITCC</pattern>
+			<template>
+				Laboratorium Komputer ITCC berada dekat dengan laboratorium jaringan. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung lalu belok kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>LOCATION LABORATORIUM OTHER JARINGAN</pattern>
+			<template>
+				Laboratorium Komputer jaringan berada dekat dengan laboratorium ITCC. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER DASAR</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 3 berdekatan dengan laboratorium komputer open source. Bila dari lift, belok ke kanan hingga ujung lalu ke kiri.
+			</template>
+		</category>
+			
+		<category>
+			<pattern>OTHER LAB OTHER OPEN OTHER SOURCE</pattern>
+			<template>
+				Laboratorium Komputer Open Source ada di lantai 3 berdekatan dengan laboratorium komputer dasar. Bila dari lift, belok ke kanan hingga ujung lalu ke kanan.
+			</template>
+        </category>
+	
+		<category>
+			<pattern>OTHER LAB OTHER LANJUT</pattern>
+			<template>
+				Laboratorium Komputer Lanjut ada di lantai 3. Bila dari lift, akan langsung terlihat laboratorium komputer lanjut.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER MULTIMEDIA</pattern>
+			<template>
+				Laboratorium Komputer Multimedia ada di lantai 3 Bila dari lift, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER OS</pattern>
+			<template>
+				<srai>OTHER LAB OTHER OPEN OTHER SOURCE</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER MULTI</pattern>
+			<template>
+				<srai>OTHER LAB OTHER MULTIMEDIA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER DASAR * 2</pattern>
+			<template>
+				Laboratorium Komputer Dasar 2 ada di lantai 5 berdekatan dengan laboratorium komputer simulasi dan pemodelan. Sebelum masuk ke ruang jurusan, belok ke kiri ke arah laboratorium simulasi dan pemodelan lalu ke kanan.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER SIMULASI OTHER DAN OTHER PEMODELAN</pattern>
+			<template>
+				Laboratorium Komputer Simulasi dan Pemodelan ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER SIMPEL</pattern>
+			<template>
+				Laboratorium Komputer Simulasi dan Pemodelan ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>OTHER LAB OTHER ITCC</pattern>
+			<template>
+				Laboratorium Komputer ITCC berada dekat dengan laboratorium jaringan. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung lalu belok kiri.
+			</template>
+		</category>
+		
+		<category>
+		    <pattern>* JELAS</pattern>
+			<template>Mohon maaf sekali apabila arahan yang saya berikan masih kurang jelas. Oleh karena itu, mohon masukannya untuk memperbaiki arahan saya.</template>
+		</category>
+		
+		<category>
+		    <pattern>*</pattern>
+			<that>* MOHON MASUKANNYA UNTUK MEMPERBAIKI ARAHAN SAYA</that>
+			<template>Terima kasih. Apa yang anda sarankan akan dipertimbangkan.</template>
+		</category>
+		
+		<category>
+		    <pattern>*</pattern>
+			<template>Mohon maaf, sebutkan saja nama laboratoriumnya.</template>
+		</category>
+		
+		<category>
+			<pattern>* DASAR</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 3 berdekatan dengan laboratorium komputer open source. Bila dari lift, belok ke kanan hingga ujung lalu ke kiri.
+			</template>
+		</category>
+			
+		<category>
+			<pattern>* OPEN * SOURCE</pattern>
+			<template>
+				Laboratorium Komputer Open Source ada di lantai 3 berdekatan dengan laboratorium komputer dasar. Bila dari lift, belok ke kanan hingga ujung lalu ke kanan.
+			</template>
+        </category>
+	
+		<category>
+			<pattern>* LANJUT</pattern>
+			<template>
+				Laboratorium Komputer Lanjut ada di lantai 3. Bila dari lift, akan langsung terlihat laboratorium komputer lanjut.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* MULTIMEDIA</pattern>
+			<template>
+				Laboratorium Komputer Multimedia ada di lantai 3 Bila dari lift, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* OS</pattern>
+			<template>
+				<srai>LOCATION LABORATORIUM OPEN SOURCE</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* MULTI</pattern>
+			<template>
+				<srai>LOCATION LABORATORIUM MULTIMEDIA</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* DASAR * 2</pattern>
+			<template>
+				Laboratorium Komputer Dasar 2 ada di lantai 5 berdekatan dengan laboratorium komputer simulasi dan pemodelan. Sebelum masuk ke ruang jurusan, belok ke kiri ke arah laboratorium simulasi dan pemodelan lalu ke kanan.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* SIMULASI DAN PEMODELAN</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* SIMPEL</pattern>
+			<template>
+				Laboratorium Komputer Dasar ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* ITCC</pattern>
+			<template>
+				Laboratorium Komputer ITCC berada dekat dengan laboratorium jaringan. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung lalu belok kiri.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* JARINGAN</pattern>
+			<template>
+				Laboratorium Komputer jaringan berada dekat dengan laboratorium ITCC. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* TERIMA * KASIH</pattern>
+			<template>
+				<think><set name="topic"></set></think>
+				Sama-sama. Ada lagi yang bisa dibantu?
+			</template>
+	    </category>
+	
+		<category>
+			<pattern>* OKE</pattern>
+			<template>
+				<srai><star/> TERIMA <star/> KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* BAIK</pattern>
+			<template>
+				<srai><star/> TERIMA <star/> KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* THANK * YOU</pattern>
+			<template>
+				<srai><star/> TERIMA <star/> KASIH</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>* THANKS</pattern>
+			<template>
+				<srai><star/> TERIMA <star/> KASIH</srai>
+			</template>
+		</category>
+	</topic>
+
+    <category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM DASAR</pattern>
+	    <template>
+	        Laboratorium Komputer Dasar ada di lantai 3 berdekatan dengan laboratorium komputer open source. Bila dari lift, belok ke kanan hingga ujung lalu ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM OPEN * SOURCE</pattern>
+	    <template>
+	        Laboratorium Komputer Open Source ada di lantai 3 berdekatan dengan laboratorium komputer dasar. Bila dari lift, belok ke kanan hingga ujung lalu ke kanan.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM LANJUT</pattern>
+	    <template>
+	        Laboratorium Komputer Lanjut ada di lantai 3. Bila dari lift, akan langsung terlihat laboratorium komputer lanjut.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM MULTIMEDIA</pattern>
+	    <template>
+	        Laboratorium Komputer Multimedia ada di lantai 3 Bila dari lift, belok ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM OS</pattern>
+	    <template>
+		    <srai><star/> DI <star/> MANA LOCATION LABORATORIUM OPEN <star/> SOURCE</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM MULTI</pattern>
+	    <template>
+		    <srai><star/> DI <star/> MANA LOCATION LABORATORIUM MULTIMEDIA</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM DASAR * 2</pattern>
+	    <template>
+	        Laboratorium Komputer Dasar 2 ada di lantai 5 berdekatan dengan laboratorium komputer simulasi dan pemodelan. Sebelum masuk ke ruang jurusan, belok ke kiri ke arah laboratorium simulasi dan pemodelan lalu ke kanan.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM SIMULASI DAN PEMODELAN</pattern>
+	    <template>
+	        Laboratorium Komputer Simulasi dan Pemodelan ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM SIMPEL</pattern>
+	    <template>
+	        <srai><star/> DI <star/> MANA LOCATION LABORATORIUM SIMPEL</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>* DI * MANA LOCATION LABORATORIUM ITCC</pattern>
+	    <template>
+	        Laboratorium Komputer ITCC berada dekat dengan laboratorium jaringan. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung lalu belok kiri.
+	    </template>
+    </category>
+	
+	<category>
+		<pattern>* DI * MANA LOCATION LABORATORIUM OTHER JARINGAN</pattern>
+		<template>
+			Laboratorium Komputer jaringan berada dekat dengan laboratorium ITCC. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung.
+		</template>
+	</category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM DASAR</pattern>
+	    <template>
+	        Laboratorium Komputer Dasar ada di lantai 3 berdekatan dengan laboratorium komputer open source. Bila dari lift, belok ke kanan hingga ujung lalu ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM OPEN * SOURCE</pattern>
+	    <template>
+	        Laboratorium Komputer Open Source ada di lantai 3 berdekatan dengan laboratorium komputer dasar. Bila dari lift, belok ke kanan hingga ujung lalu ke kanan.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM LANJUT</pattern>
+	    <template>
+	        Laboratorium Komputer Lanjut ada di lantai 3. Bila dari lift, akan langsung terlihat laboratorium komputer lanjut.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM MULTIMEDIA</pattern>
+	    <template>
+	        Laboratorium Komputer Multimedia ada di lantai 3 Bila dari lift, belok ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM OS</pattern>
+	    <template>
+		    <srai><star/> DIMANA LOCATION LABORATORIUM OPEN <star/> SOURCE</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM MULTI</pattern>
+	    <template>
+		    <srai><star/> DIMANA LOCATION LABORATORIUM MULTIMEDIA</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM DASAR * 2</pattern>
+	    <template>
+	        Laboratorium Komputer Dasar 2 ada di lantai 5 berdekatan dengan laboratorium komputer simulasi dan pemodelan. Sebelum masuk ke ruang jurusan, belok ke kiri ke arah laboratorium simulasi dan pemodelan lalu ke kanan.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM SIMULASI DAN PEMODELAN</pattern>
+	    <template>
+	        Laboratorium Komputer Simulasi dan Pemodelan ada di lantai 5 berdekatan dengan laboratorium komputer dasar 2. Sebelum masuk ke ruang jurusan, belok ke kiri.
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM SIMPEL</pattern>
+	    <template>
+	        <srai><star/> DIMANA LOCATION LABORATORIUM SIMULASI DAN PEMODELAN</srai>
+	    </template>
+    </category>
+	
+	<category>
+        <pattern>QUESTION DIMANA LOCATION LABORATORIUM ITCC</pattern>
+	    <template>
+	        Laboratorium Komputer ITCC berada dekat dengan laboratorium jaringan. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung lalu belok kiri.
+	    </template>
+    </category>
+	
+	<category>
+		<pattern>QUESTION DIMANA LOCATION LABORATORIUM OTHER JARINGAN</pattern>
+		<template>
+			Laboratorium Komputer jaringan berada dekat dengan laboratorium ITCC. Sebelum masuk ke ruang jurusan, berbeloklah ke kanan hingga ujung.
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TERIMA * KASIH</pattern>
+		<template>
+		    <think><set name="topic"></set></think>
+			Sama-sama. Ada lagi yang bisa dibantu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* OKE</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* BAIK</pattern>
+		<template>
+		    <srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANK * YOU</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* THANKS</pattern>
+		<template>
+			<srai><star/> TERIMA <star/> KASIH</srai>
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Apa itu?
+		</template>
+	</category>
+	
+	<category>
+	    <pattern>* TIDAK * ADA</pattern>
+		<that>SAMA SAMA ADA LAGI YANG BISA DIBANTU</that>
+		<template>
+			Mungkin Anda ingin menanyakan hal lain?
+		</template>
+	</category>
+</aiml>

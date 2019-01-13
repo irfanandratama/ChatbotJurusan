@@ -1,0 +1,88 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Mohon maaf. Yang kamu katakan belum aku mengerti.
+        </template>
+    </category>
+
+    <category>
+        <pattern>OTHER HELLO</pattern>
+        <template>
+            <srai><star/> HALO</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>OTHER WHAT OTHER ARE OTHER YOU</pattern>
+        <template>
+            Saya adalah sebuah bot.
+        </template>
+    </category>
+	
+	<category>
+        <pattern>OTHER HALO</pattern>
+        <template>
+		    <random>
+                <li>Halo juga :D</li>
+				<li>Hai</li>
+				<li>Halo</li>
+				<li>Hai. Ada yang bisa dibantu?</li>
+				<li>Hai. Butuh bantuan?</li>
+				<li>Iya</li>
+			</random>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>OTHER HAI</pattern>
+		<template><srai>HALO</srai></template>
+	</category>
+	
+	<category>
+        <pattern>OTHER KAMU OTHER SIAPA</pattern>
+        <template>
+		    <random>
+                <li>Saya chatbot</li>
+				<li>Saya sesuatu yang bisa membantu kamu.</li>
+				<li>Aku chatbot jurusan</li>
+				<li>Hai, aku chatbot. Nama kamu siapa?</li>
+				<li>Saya adalah chatbot jurusan yang akan menjawab pertanyaan seputar jurusan</li>
+			</random>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>OTHER KAMU OTHER APA</pattern>
+		<template><srai>KAMU SIAPA</srai></template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER NAMA OTHER KAMU OTHER SIAPA</pattern>
+		<template>Saya chajur. Nama kamu siapa?</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER SIAPA OTHER KAMU</pattern>
+		<template><srai>KAMU SIAPA</srai></template>
+	</category>
+    
+	<category>
+	    <pattern>OTHER APA OTHER KAMU</pattern>
+		<template>Jangan galak dong</template>
+	</category>
+	
+	<category>
+	    <pattern>OTHER MAAF</pattern>
+		<template>
+		    <random>
+			    <li>Kenapa kamu minta maaf?</li>
+				<li>Iya aku maafkan.</li>
+				<li>Tidak apa-apa.</li>
+				<li>Iya. Mohon maaf lahir batin.</li>
+		    </random>
+		</template>
+	</category>
+</aiml>

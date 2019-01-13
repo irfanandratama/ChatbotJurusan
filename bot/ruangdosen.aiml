@@ -1,0 +1,467 @@
+<aiml version="2.0" encoding="UTF-8">
+<!-- ruangdosen.aiml -->
+
+    <category>
+		<pattern>* INTENT RUANGAN * OTHER DOSEN</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+	
+	<category>
+		<pattern>* INTENT RUANGAN * OTHER DOSEN *</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+
+	<category>
+		<pattern>* RUANGAN * DOSEN</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+	
+	<category>
+		<pattern>* INTENT RUANG * OTHER DOSEN</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+	
+	<category>
+		<pattern>* INTENT RUANG * OTHER DOSEN *</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+
+	<category>
+		<pattern>* RUANG * DOSEN</pattern>
+		<template><think><set name="topic">RUANGDOS</set></think>Kamu ingin tahu ruangan dosen? Ruangan siapa?</template>
+	</category>
+	
+	<topic name="RUANGDOS">
+	    <category>
+		    <pattern>* PAK * ABDUL HARIS</pattern>
+			<template>Ruangannya berada di lantai 3. Ruangan di samping lift, dekat dengan pintu masuk menuju operation room atau lab bahasa inggris.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * RAKHMAT ARIANTO</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * YASNI DJAMAIN</pattern>
+			<template>Ruangannya berada di lantai 3. Begitu keluar dari lift, carilah arah ke laboratorium multimedia. Di samping lab multi, ada ruangan ibu Yasni.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * BUDI *</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * ANDI *</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * BUDI</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * ANDI * DAHRONI</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * DIAN * HARTANTI</pattern>
+			<template>Ruangannya berada di lantai 5. Bersebelahan dengan ruang laboratorium simpel dan laboratorium dasar 2. Apabila dari lift, ke arah pintu masuk jurusan kemudian belok kiri ke arah lab simpel. Lalu ke kanan sedikit.</template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * KARINA * DJUNAEDI</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * KARINA * DJUNAEDI</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * RAHMA * FARAHNINGRUM</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * RAHMA</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * PRITA *</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * WIDYA *</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * ABDURRASYID</pattern>
+			<template>Ruangan bapak Abdurrasyid ada di lantai 5. Tepatnya di dalam ruang jurusan teknik informatika, lalu belok kanan ke arah loket jurusan. Ruangannya di sebelah loket jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * MEILIA *</pattern>
+			<template>Ruangan ibu Meilia ada di lantai 5. Lebih tepatnya adalah ruangan kepala jurusan. Posisinya berada di sebelah ruangan bapak Abdurrasyid atau di sebelah kanan dari kursi kayu yang ada di jurusan teknik informatika.</template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * MEILIA</pattern>
+			<template><srai><star/> IBU <star/> MEILIA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * YOGA *</pattern>
+			<template>Ruangannya berada di lantai 4. Dari lift, ke arah kanan dari meja resepsionis di lantai 4. Kemudian, belok ke arah kiri ke arah ruangan Sedyatmo. Di sebelah kanan dari pintu ruang Sedyatmo, ada pintu di bagian pojok yang menuju ruangan PPSI.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * YOGA</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * YESSY * FITRIANI</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * DINE *</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * DINE</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * FARID</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * EKA</pattern>
+			<template>Ruangannya berada di lantai 5. Lurus saja masuk ke ruangan jurusan hingga masuk ke ruangan. Di dalam terdapat beberapa ruangan dosen dengan papan namanya masing-masing.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * EKA * PUTRA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * YESSY * ASRI</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * DARMA * RUSJDI</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * DARMA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * DWINA *</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * DWINA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * RAKHMADI *</pattern>
+			<template>Ruangannya berada di lantai 2. Di sebelah ruangan Badan Eksekutif Mahasiswa yang berada di lantai 2.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * RAKHMADI</pattern>
+			<template><srai><star/> PAK <star/> RAKHMADI <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * INDRIYANTO</pattern>
+			<template>Ruangannya berada di lantai 2. Pergi ke arah ruang BEM tapi terus jalan hingga ujung lorong. Kemudian, belok ke kiri.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * IRIANSYAH</pattern>
+			<template>Ruangannya berada di lantai 2. Pergi ke arah perpustakaan, sebelum sampai di perpustakaan ada ruangan di sebelah kiri. Kemudian, di dalam carilah pintu dengan papan nama Pak Iriansyah.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * JATNIKA</pattern>
+			<template>Ruangannya berada di lantai 5, lebih tepatnya di dalam sekretariat asisten laboratorium ITCC. Apabila dari lift, pergilah ke arah sebaliknya dari ruang jurusan. Lalu, belok kiri, pergilah ke pintu yang berada di samping kanan dari mesin BluePay. Di dalamnya terdapat dua ruangan lagi, yaitu ruangan Pak Jatnika dan Pak Fadli.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * FADLI</pattern>
+			<template><srai><star/> PAK <star/> JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * YUDHO</pattern>
+			<template>Ruangan berada di lantai 5, di sebelah ruang sekretariat laboratorium ITCC. Di dalamnya terdapat tiga ruangan lagi, carilah ruangan dengan papan nama yang sesuai kamu cari.</template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * SATRIO</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * TEJA</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * MAX</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* PAK * WISNU</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>* IBU * PUJI</pattern>
+			<template>Ruangan Ibu Puji berada di lantai 11. Ruangan Ibu Puji adalah ruang konseling. Apabila dari lift, pergi ke arah loket lantai 11 tapi sebelum masuk lebih jauh, belok ke kiri. Ruangan ada di sebelah kanan setelah tangga darurat.</template>
+		</category>
+		
+		<category>
+			<pattern>*</pattern>
+			<template>
+				Maaf mungkin namanya bisa lebih jelas lagi? Mohon tambahkan Pak atau Ibu di depan nama dosen.
+			</template>
+		</category>
+	</topic>
+	
+	    <category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * ABDUL HARIS</pattern>
+			<template>Ruangannya berada di lantai 3. Ruangan di samping lift, dekat dengan pintu masuk menuju operation room atau lab bahasa inggris.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * RAKHMAT ARIANTO</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN* IBU * YASNI DJAMAIN</pattern>
+			<template>Ruangannya berada di lantai 3. Begitu keluar dari lift, carilah arah ke laboratorium multimedia. Di samping lab multi, ada ruangan ibu Yasni.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * BUDI *</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * ANDI *</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * BUDI</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * ANDI * DAHRONI</pattern>
+			<template><srai><star/> PAK <star/> ABDUL HARIS</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DIAN * HARTANTI</pattern>
+			<template>Ruangannya berada di lantai 5. Bersebelahan dengan ruang laboratorium simpel dan laboratorium dasar 2. Apabila dari lift, ke arah pintu masuk jurusan kemudian belok kiri ke arah lab simpel. Lalu ke kanan sedikit.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DIAN</pattern>
+			<template>Ruangannya berada di lantai 5. Bersebelahan dengan ruang laboratorium simpel dan laboratorium dasar 2. Apabila dari lift, ke arah pintu masuk jurusan kemudian belok kiri ke arah lab simpel. Lalu ke kanan sedikit.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * KARINA * DJUNAEDI</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * KARINA * DJUNAEDI</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * RAHMA * FARAHNINGRUM</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * RAHMA</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * PRITA *</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * WIDYA *</pattern>
+			<template><srai><star/> IBU <star/> DIAN <star/> HARTANTI</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * ABDURRASYID</pattern>
+			<template>Ruangan bapak Abdurrasyid ada di lantai 5. Tepatnya di dalam ruang jurusan teknik informatika, lalu belok kanan ke arah loket jurusan. Ruangannya di sebelah loket jurusan.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * MEILIA *</pattern>
+			<template>Ruangan ibu Meilia ada di lantai 5. Lebih tepatnya adalah ruangan kepala jurusan. Posisinya berada di sebelah ruangan bapak Abdurrasyid atau di sebelah kanan dari kursi kayu yang ada di jurusan teknik informatika.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * MEILIA</pattern>
+			<template><srai><star/> IBU <star/> MEILIA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * YOGA *</pattern>
+			<template>Ruangannya berada di lantai 4. Dari lift, ke arah kanan dari meja resepsionis di lantai 4. Kemudian, belok ke arah kiri ke arah ruangan Sedyatmo. Di sebelah kanan dari pintu ruang Sedyatmo, ada pintu di bagian pojok yang menuju ruangan PPSI.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * YOGA</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * YESSY * FITRIANI</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DINE *</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DINE</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * FARID</pattern>
+			<template><srai><star/> PAK <star/> YOGA <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * EKA</pattern>
+			<template>Ruangannya berada di lantai 5. Lurus saja masuk ke ruangan jurusan hingga masuk ke ruangan. Di dalam terdapat beberapa ruangan dosen dengan papan namanya masing-masing.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * EKA * PUTRA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * YESSY * ASRI</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * DARMA * RUSJDI</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * DARMA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DWINA *</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * DWINA</pattern>
+			<template><srai><star/> PAK <star/> EKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * RAKHMADI *</pattern>
+			<template>Ruangannya berada di lantai 2. Di sebelah ruangan Badan Eksekutif Mahasiswa yang berada di lantai 2.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * RAKHMADI</pattern>
+			<template><srai><star/> PAK <star/> RAKHMADI <star/></srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * INDRIYANTO</pattern>
+			<template>Ruangannya berada di lantai 2. Pergi ke arah ruang BEM tapi terus jalan hingga ujung lorong. Kemudian, belok ke kiri.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * IRIANSYAH</pattern>
+			<template>Ruangannya berada di lantai 2. Pergi ke arah perpustakaan, sebelum sampai di perpustakaan ada ruangan di sebelah kiri. Kemudian, di dalam carilah pintu dengan papan nama Pak Iriansyah.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * JATNIKA</pattern>
+			<template>Ruangannya berada di lantai 5, lebih tepatnya di dalam sekretariat asisten laboratorium ITCC. Apabila dari lift, pergilah ke arah sebaliknya dari ruang jurusan. Lalu, belok kiri, pergilah ke pintu yang berada di samping kanan dari mesin BluePay. Di dalamnya terdapat dua ruangan lagi, yaitu ruangan Pak Jatnika dan Pak Fadli.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * FADLI</pattern>
+			<template><srai><star/> PAK <star/> JATNIKA</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * YUDHO</pattern>
+			<template>Ruangan berada di lantai 5, di sebelah ruang sekretariat laboratorium ITCC. Di dalamnya terdapat tiga ruangan lagi, carilah ruangan dengan papan nama yang sesuai kamu cari.</template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * SATRIO</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * TEJA</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * MAX</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * PAK * WISNU</pattern>
+			<template><srai><star/> PAK <star/> SATRIO</srai></template>
+		</category>
+		
+		<category>
+		    <pattern>QUESTION DIMANA * RUANGAN * IBU * PUJI</pattern>
+			<template>Ruangan Ibu Puji berada di lantai 11. Ruangan Ibu Puji adalah ruang konseling. Apabila dari lift, pergi ke arah loket lantai 11 tapi sebelum masuk lebih jauh, belok ke kiri. Ruangan ada di sebelah kanan setelah tangga darurat.</template>
+		</category>
+</aiml>

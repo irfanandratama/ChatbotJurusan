@@ -1,0 +1,87 @@
+{% include 'header.html' %}
+
+<body class="animsition">
+    <div class="page-wrapper">
+       {% include 'menu.html' %}
+
+       <!-- PAGE CONTAINER-->
+       <div class="page-container2">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop2">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap2">
+                        <div class="logo d-block d-lg-none">
+                            <a href="#">
+                                <img src="images/icon/logo-white.png" alt="Chatbot Jurusan" />
+                            </a>
+                        </div>
+                        <div class="header-button2">
+                            <div class="header-button-item js-item-menu">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section__content section__content--p30" style="padding-top: 100px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="title-5 m-b-35">Chat Log</h3>
+                            <div class="table-data__tool">
+                                    <div class="table-data__tool-right">
+									<a href="{{url_for('export', filename='./Chatlog.xlsx')}}">
+                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small">
+                                            <i class="zmdi zmdi-download"></i>Export</button></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- DATA TABLE-->
+                                    <div class="table-responsive m-b-40">
+                                        <table class="table table-borderless table-data3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nomor</th>
+                                                    <th>Pertanyaan</th>
+                                                    <th>Jawaban</th>
+													<th>Tanggal Chat</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+											{% for item in chatlog %}
+                                                <tr>
+                                                    <td>{{item[0]}}</td>
+                                                    <td>{{item[1]}}</td>
+                                                    <td>{{item[2]}}</td>
+													<td>{{item[3]}}</td>
+                                                </tr>
+											{% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- END DATA TABLE-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END PAGE CONTAINER-->
+            </div>
+        </div>
+{% include 'footer.html' %}
