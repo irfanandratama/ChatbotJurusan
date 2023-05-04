@@ -1,6 +1,6 @@
 python-aiml==0.9.1
 click==6.7
-Flask==1.0.2
+Flask==2.2.5
 gunicorn==19.7.1
 itsdangerous==0.24
 Jinja2==2.10
